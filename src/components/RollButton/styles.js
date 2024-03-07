@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ButtonStyle  = styled.a`
-    background-color: #ffffff96;
+    background-color: #ffffff5c;
     color: #fff;
     padding: 7px 17px;
     border: 1px solid #fff;
@@ -9,8 +9,8 @@ export const ButtonStyle  = styled.a`
     cursor: pointer;
 
     &:hover {
-        box-shadow: 0px 0px 5px #fff;
+        box-shadow: 0px 0px 5px #000 inset;
         border-color: transparent;
-        color: #0A014F;
+        color: #000;
     }
 `
