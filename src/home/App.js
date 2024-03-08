@@ -6,7 +6,7 @@ function App() {
     return (
     <>
         <Header name="D.C.Santos"/>
-        <MyNameSection/>
+        <MyNameSection name_1="Deivison" name_2="Santos" office="Web Developer" buttonText="View More"/>
     </>
     );
 }
