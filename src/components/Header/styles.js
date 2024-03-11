@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div `
-    background-image: linear-gradient(to bottom, #000, #0e0e0e,#3b3a3a57);
+    // background-image: linear-gradient(to bottom, #000, #0e0e0e,#3b3a3a57);
     height: 80px;
+    width: 100vw;
     padding: 30px;
-    border-bottom: 2px solid #0e0e0e;
 
+    z-index: 1;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

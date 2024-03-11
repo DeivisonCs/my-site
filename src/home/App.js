@@ -7,6 +7,9 @@ function App() {
     <>
         <Header name="D.C.Santos"/>
         <MyNameSection name_1="Deivison" name_2="Santos" office="Web Developer" buttonText="View More"/>
+        <MyNameSection name_1="Deivison" name_2="Santos" office="Web Developer" buttonText="View More"/>
+        <MyNameSection name_1="Deivison" name_2="Santos" office="Web Developer" buttonText="View More"/>
+
     </>
     );
 }

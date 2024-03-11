@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
-export const ButtonStyle  = styled.a`
+export const ButtonText  = styled.a`
     background-color: #ffffff2c;
     color: #fff;
     padding: 7px 17px;
     border: 1px solid #fff;
     border-radius: 15px;
+    box-shadow: 0px 0px 4px #fff;
     cursor: pointer;
+    z-index: 2;
 
     &:hover {
         box-shadow: 0px 0px 5px #000 inset;
@@ -14,10 +16,68 @@ export const ButtonStyle  = styled.a`
         color: #000;
     }
 
+`
+
+export const ButtonContainer = styled.div`
+    // background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+
     &.view_more{
+        transform: translate(-50px, -6px);
+    }
+
+    &.view_more a{
         font-size: 1.2rem;
         border-radius: 30px;
         padding: 7px 20px;
-        transform: translate(-40px, -10px);
+        
+
+        box-shadow: none;
+        border: none;
+        background-color: transparent;
+    }
+
+    &.view_more a:hover {
+        color: #fff;
+        text-shadow: 0px 0px 7px #fff;
+        margin-top: -.2rem;
+        font-size: 1.4rem;
+    }
+
+    &.view_more::before {
+        content: '';
+
+        position: absolute;
+        background-color: #fff;
+        // background-image: linear-gradient(#fff, #333, #1E1E1E);
+
+        height: 400%;
+        width: 20px;
+
+        animation: rotation 3s linear infinite;
+    }
+
+    &.view_more::after {
+        content: '';
+
+        position: absolute;
+        background-color: #1E1E1E;
+        border-radius: 10px;
+        height: 90%;
+        width: 95%;
+    }
+
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
     }
 `
