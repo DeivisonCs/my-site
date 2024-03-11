@@ -43,6 +43,8 @@ export const LastName = styled.h1`
 export const WhatIam = styled.p`
     font-family: Bebas Neue, arial, sans-serif;
     font-size: 3rem;
+    color: #b7b7b7;
+    text-shadow: 0px 3px 2px #ffffff47;
 
     transform: translate(-40px, -10px);
 `
