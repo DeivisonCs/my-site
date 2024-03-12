@@ -41,7 +41,7 @@ export const NameDiv = styled.div`
 
 export const FirstName = styled.h1`
     font-family: Cinzel Decorative, arial, sans-serif;
-    font-size: 6.5rem;
+    font-size: 6.5em;
     text-shadow: -4px 5px 2px #000;
     transform: translate(-50px, 0px);
     opacity: 0;

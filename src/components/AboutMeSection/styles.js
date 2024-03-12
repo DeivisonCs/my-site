@@ -14,16 +14,16 @@ export const AboutMeDiv = styled.div`
 
     & h2 {
         color: #b7b7b7;
-        font-size: 3rem;
+        font-size: 4rem;
+        text-align: center;
 
-        // text-decoration: underline;
-        // background-color: cyan;
     }
 
     & span {
         background-color: #b7b7b7;
-        width: 50%;
+        width: 400px;
         padding: 1px;
+        border-radius: 5px;
 
         margin-top: -70px;
     }
