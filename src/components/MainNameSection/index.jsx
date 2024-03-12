@@ -8,8 +8,13 @@ const MyNameSection = ({name_1, name_2, office, buttonText}) => {
             <NameDiv>
                 <FirstName>{name_1}</FirstName>
                 <LastName>{name_2}</LastName>
-                <WhatIam>{office}</WhatIam>
-                <Button typeEdit="view_more" text={buttonText}/>
+
+                <WhatIam className="fadeInAnimation">{office}</WhatIam>
+
+                <Button 
+                    typeEdit="view_more fadeInAnimation"
+                    text={buttonText}
+                />
             </NameDiv>
         </NameSection>
     )

@@ -19,7 +19,6 @@ export const ButtonText  = styled.a`
 `
 
 export const ButtonContainer = styled.div`
-    // background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,6 +27,7 @@ export const ButtonContainer = styled.div`
 
     &.view_more{
         transform: translate(-50px, -6px);
+        opacity: 0;
     }
 
     &.view_more a{
@@ -44,8 +44,7 @@ export const ButtonContainer = styled.div`
     &.view_more a:hover {
         color: #fff;
         text-shadow: 0px 0px 7px #fff;
-        margin-top: -.2rem;
-        font-size: 1.4rem;
+        letter-spacing: 2px;
     }
 
     &.view_more::before {
@@ -58,7 +57,7 @@ export const ButtonContainer = styled.div`
         height: 400%;
         width: 20px;
 
-        animation: rotation 3s linear infinite;
+        animation: rotation 3s linear 2s infinite;
     }
 
     &.view_more::after {
