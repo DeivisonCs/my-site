@@ -26,6 +26,7 @@ export const ButtonContainer = styled.div`
     overflow: hidden;
 
     &.view_more{
+        position: absolute;
         transform: translate(-50px, -6px);
         opacity: 0;
     }

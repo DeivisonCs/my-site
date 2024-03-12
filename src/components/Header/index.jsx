@@ -1,6 +1,6 @@
 import React from "react";
 import { HeaderContainer, ButtonsContainer, NameContainer, NameStyle } from "./styles";
-import { Button } from "../RollButton" 
+import { Button } from "../Button" 
 
 const Header = ({name}) => {
     return (

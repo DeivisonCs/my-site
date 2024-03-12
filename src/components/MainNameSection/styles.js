@@ -6,10 +6,24 @@ export const NameSection = styled.section`
     background-image: radial-gradient(circle at 100% -80px, #757575, #434343, #1E1E1E 50%);
     height: 100vh;
 
-
     display: flex;
     align-items: center;
     justify-content: center;
+
+    & .fadeInAnimation {
+        animation: fadeInAnimation 2s ease-in 3.5s forwards;
+    }
+
+    @keyframes fadeInAnimation {
+        from {
+            transform: translate(-40px, 20px);
+            opacity: 0;
+        }
+        to {
+            transform: translate(-40px, -10px);
+            opacity: 1;
+        }
+    }
 `
 
 export const NameDiv = styled.div`
@@ -96,6 +110,8 @@ export const WhatIam = styled.p`
     font-size: 3rem;
     color: #b7b7b7;
     text-shadow: 0px 3px 2px #ffffff47;
-    transform: translate(-40px, -10px);
     opacity: 0;
+
+    position: absolute;
+    top: 56%;
 `

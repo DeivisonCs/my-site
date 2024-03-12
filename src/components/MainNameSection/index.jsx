@@ -1,6 +1,6 @@
 import React from "react";
 import {NameSection, NameDiv, FirstName, LastName, WhatIam} from "./styles";
-import { Button } from "../RollButton";
+import { Button } from "../Button";
 
 const MyNameSection = ({name_1, name_2, office, buttonText}) => {
     return(
