@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutMeDiv = styled.div`
+export const AboutMeDiv = styled.section`
     height: 50vh;
     // background-color: cyan;
     padding: 15%;

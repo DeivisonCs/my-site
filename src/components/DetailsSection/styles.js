@@ -11,17 +11,17 @@ export const DetailsContainer = styled.div`
     justify-content: flex-start;
     gap: 200px;
 
-    & div ul{
+    & section ul{
         list-style: none;
     }
 
-    & div h2 {
+    & section h2 {
         color: #b7b7b7;
         font-size: 4rem;
     }
 `
 
-export const SkillsContainer = styled.div`
+export const SkillsContainer = styled.section`
     width: 100%;
     max-height: 50vh;
 
@@ -77,7 +77,7 @@ export const SkillsContainer = styled.div`
     }
 `
 
-export const EducationContainer = styled.div`
+export const EducationContainer = styled.section`
     width: 100%;
 
     display: flex;

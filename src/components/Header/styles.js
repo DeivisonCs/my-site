@@ -38,6 +38,8 @@ export const NameContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    opacity: 0;
 `
 
 export const NameStyle = styled.span`

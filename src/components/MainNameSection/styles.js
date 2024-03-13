@@ -30,10 +30,11 @@ export const NameDiv = styled.div`
     width: 70vw;
     height: 50vh;
     color: #fff;
-    padding-bottom: 90px;
+    // background-color: red;
+    position: fixed;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 
@@ -58,20 +59,19 @@ export const FirstName = styled.h1`
     font-size: 6.5em;
     text-shadow: -4px 5px 2px #000;
     transform: translate(-50px, 0px);
+    margin-bottom: -40px;
     opacity: 0;
 
-    position: absolute;
-    top: 33%;
+    // position: absolute;
+    // top: 15%;
 
     animation: enteringFirstName 3s ease-in 2s forwards;
 
     @keyframes enteringFirstName {
         from {
-            // transform: translateX(-800px);
             opacity:0;  
         }
         to {
-            // transform: translateX(-50px);
             opacity: 1; 
         }
     }
@@ -81,11 +81,12 @@ export const LastName = styled.h1`
     font-family: Cinzel Decorative, arial, sans-serif;
     font-size: 5.8rem;
     text-shadow: -4px 5px 2px #000;
-    transform: translate(80px, 0px);
+    transform: translate(100px, 0px);
+    margin-bottom: 20px;
     opacity: 0;
 
-    position: absolute;
-    top: 43%;
+    // position: absolute;
+    // top: 33%;
 
     animation: enteringLastName 2.5s ease-in 1s forwards;
 
@@ -99,7 +100,7 @@ export const LastName = styled.h1`
             opacity: 1;
         }
         100% {
-            transform: translateX(80px);
+            transform: translateX(100px);
             opacity: 1; 
         }
     }
@@ -112,6 +113,6 @@ export const WhatIam = styled.p`
     text-shadow: 0px 3px 2px #ffffff47;
     opacity: 0;
 
-    position: absolute;
-    top: 56%;
+    // position: absolute;
+    // top: 62%;
 `
