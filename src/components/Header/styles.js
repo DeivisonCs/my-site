@@ -5,6 +5,7 @@ export const HeaderContainer = styled.div `
     height: 80px;
     width: 100vw;
     padding: 30px;
+    opacity: 0;
 
     z-index: 1;
     position: fixed;
@@ -12,6 +13,17 @@ export const HeaderContainer = styled.div `
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    animation: fadeInHeaderAnimation 2s 3s forwards;
+
+    @keyframes fadeInHeaderAnimation {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
 `
 
 export const ButtonsContainer = styled.div`

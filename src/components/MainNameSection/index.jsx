@@ -1,6 +1,8 @@
 import React from "react";
 import {NameSection, NameDiv, FirstName, LastName, WhatIam} from "./styles";
 import { Button } from "../Button";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const MyNameSection = ({name_1, name_2, office, buttonText}) => {
     return(
