@@ -18,6 +18,8 @@ export const DetailsContainer = styled.div`
     & section h2 {
         color: #b7b7b7;
         font-size: 4rem;
+        font-family: Bebas Neue, Arial;
+        letter-spacing: .7rem;
     }
 `
 

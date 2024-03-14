@@ -34,8 +34,6 @@ export const NameDiv = styled.div`
     color: #fff;
     // background-color: blue;
 
-    position: relative;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,7 +62,6 @@ export const FirstName = styled.h1`
     font-family: Cinzel Decorative, arial, sans-serif;
     font-size: 6.5em;
     text-shadow: -4px 5px 2px #000;
-    transform: translate(-50px, 0px);
     margin-bottom: -40px;
     opacity: 0;
 
@@ -72,9 +69,11 @@ export const FirstName = styled.h1`
 
     @keyframes enteringFirstName {
         from {
-            opacity:0;  
+            transform: translateY(-50px);
+            opacity:0;
         }
         to {
+            transform: translateY(0px);
             opacity: 1; 
         }
     }
@@ -107,7 +106,8 @@ export const LastName = styled.h1`
 `
 
 export const WhatIam = styled.p`
-    font-family: Bebas Neue, arial, sans-serif;
+    font-family: Great Vibes, arial, sans-serif;
+    letter-spacing: .7rem;
     font-size: 4rem;
     color: #c0c0c0;
     text-shadow: 0px 3px 2px #ffffff47;

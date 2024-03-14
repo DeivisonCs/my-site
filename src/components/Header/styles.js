@@ -6,12 +6,13 @@ export const HeaderContainer = styled.div `
     width: 100vw;
     padding: 30px;
     opacity: 0;
+    transform: translateY(-80px);
 
     z-index: 1;
     position: fixed;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 
     animation: fadeInHeaderAnimation 2s 3s forwards;
@@ -22,6 +23,7 @@ export const HeaderContainer = styled.div `
         }
         to {
             opacity: 1;
+            transform: translateY(0);
         }
     }
 `
@@ -32,14 +34,6 @@ export const ButtonsContainer = styled.div`
     justify-content: center;
     align-items: center;
     gap: 15px;
-`
-
-export const NameContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    opacity: 0;
 `
 
 export const NameStyle = styled.span`

@@ -13,7 +13,7 @@ const MyNameSection = ({name_1, name_2, office, buttonText}) => {
         gsap.to(".mainNameDiv", {
             position: 'fixed',
             top: "10px",
-            left: 0,
+            left: 20,
             
             scrollTrigger: {
                 trigger: ".nameMainSection",
@@ -50,7 +50,7 @@ const MyNameSection = ({name_1, name_2, office, buttonText}) => {
 
         gsap.to(".subTextDiv", {
             opacity: 0,
-            y: 100,
+            y: 300,
 
             scrollTrigger: {
                 trigger: ".nameMainSection",

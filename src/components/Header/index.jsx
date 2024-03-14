@@ -6,10 +6,6 @@ const Header = ({name}) => {
     return (
     <>
         <HeaderContainer>
-            <NameContainer>
-                <NameStyle>{name}</NameStyle>
-            </NameContainer>
-
             <ButtonsContainer>
                 <Button text="About Me"/>
                 <Button text="Skills"/>

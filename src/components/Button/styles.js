@@ -3,10 +3,13 @@ import styled from "styled-components";
 export const ButtonText  = styled.a`
     background-color: #ffffff2c;
     color: #fff;
+    font-family: Bebas Neue, Arial;
+    letter-spacing: 1px;
+
     padding: 7px 17px;
     border: 1px solid #fff;
     border-radius: 15px;
-    // box-shadow: 0px 0px 4px #fff;
+
     cursor: pointer;
     z-index: 2;
 
