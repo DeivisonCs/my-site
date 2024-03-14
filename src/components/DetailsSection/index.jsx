@@ -17,91 +17,91 @@ const DetailsSection = () => {
                     </li>
                     <li>
                         {/* logo da linguagem */}
-                        <img src="" alt="" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
                         {/* nome da linguagem */}
                         <span>JavaScript</span>
                     </li>
                     <li>
                         {/* logo da linguagem */}
-                        <img src="" alt="" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
                         {/* nome da linguagem */}
                         <span>JavaScript</span>
                     </li>
                     <li>
                         {/* logo da linguagem */}
-                        <img src="" alt="" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
                         {/* nome da linguagem */}
                         <span>JavaScript</span>
                     </li>
                     <li>
                         {/* logo da linguagem */}
-                        <img src="" alt="" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
                         {/* nome da linguagem */}
                         <span>JavaScript</span>
                     </li>
                     <li>
                         {/* logo da linguagem */}
-                        <img src="" alt="" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
                         {/* nome da linguagem */}
                         <span>JavaScript</span>
                     </li>
                     <li>
                         {/* logo da linguagem */}
-                        <img src="" alt="" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
                         {/* nome da linguagem */}
                         <span>JavaScript</span>
                     </li>
                     <li>
                         {/* logo da linguagem */}
-                        <img src="" alt="" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
                         {/* nome da linguagem */}
                         <span>JavaScript</span>
                     </li>
                     <li>
                         {/* logo da linguagem */}
-                        <img src="" alt="" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
                         {/* nome da linguagem */}
                         <span>JavaScript</span>
                     </li>
                     <li>
                         {/* logo da linguagem */}
-                        <img src="" alt="" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
                         {/* nome da linguagem */}
                         <span>JavaScript</span>
                     </li>
                     <li>
                         {/* logo da linguagem */}
-                        <img src="" alt="" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
                         {/* nome da linguagem */}
                         <span>JavaScript</span>
                     </li>
                     <li>
                         {/* logo da linguagem */}
-                        <img src="" alt="" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
                         {/* nome da linguagem */}
                         <span>JavaScript</span>
                     </li>
                     <li>
                         {/* logo da linguagem */}
-                        <img src="" alt="" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
                         {/* nome da linguagem */}
                         <span>JavaScript</span>
                     </li>
                     <li>
                         {/* logo da linguagem */}
-                        <img src="" alt="" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
                         {/* nome da linguagem */}
                         <span>JavaScript</span>
                     </li>
                     <li>
                         {/* logo da linguagem */}
-                        <img src="" alt="" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
                         {/* nome da linguagem */}
                         <span>JavaScript</span>
                     </li>
                     <li>
                         {/* logo da linguagem */}
-                        <img src="" alt="" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
                         {/* nome da linguagem */}
                         <span>JavaScript</span>
                     </li>
