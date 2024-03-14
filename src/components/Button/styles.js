@@ -6,14 +6,14 @@ export const ButtonText  = styled.a`
     padding: 7px 17px;
     border: 1px solid #fff;
     border-radius: 15px;
-    box-shadow: 0px 0px 4px #fff;
+    // box-shadow: 0px 0px 4px #fff;
     cursor: pointer;
     z-index: 2;
 
     &:hover {
         box-shadow: 0px 0px 5px #000 inset;
         border-color: transparent;
-        color: #000;
+        color: #1E1E1E;
     }
 
 `
@@ -23,11 +23,10 @@ export const ButtonContainer = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    overflow: hidden;
 
     &.view_more{
-        // position: absolute;
-        transform: translate(-50px, -6px);
+        overflow: hidden;
+        width: 50%;
         opacity: 0;
     }
 
@@ -55,7 +54,7 @@ export const ButtonContainer = styled.div`
         background-color: #fff;
         // background-image: linear-gradient(#fff, #333, #1E1E1E);
 
-        height: 400%;
+        height: 500%;
         width: 20px;
 
         animation: rotation 3s linear 2s infinite;

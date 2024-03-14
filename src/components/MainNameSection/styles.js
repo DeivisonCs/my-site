@@ -16,12 +16,10 @@ export const NameSection = styled.section`
 
     @keyframes fadeInAnimation {
         from {
-            // transform: translate(-40px, 20px);
             transform: translateY(20px);
             opacity: 0;
         }
         to {
-            // transform: translate(-40px, 0px);
             transform: translateY(0);
             opacity: 1;
         }
@@ -55,6 +53,10 @@ export const NameDiv = styled.div`
         bottom: 10%;
         // background-color: red;
         transform: translate(-40px, -10px);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 `
 
