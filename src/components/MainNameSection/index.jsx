@@ -10,17 +10,17 @@ const MyNameSection = ({name_1, name_2, office, buttonText}) => {
     useLayoutEffect(() => {
 
         gsap.registerPlugin(ScrollTrigger);
-        gsap.to(".nameMainSection", {
+        gsap.to(".mainNameDiv", {
             position: 'fixed',
             alignItems: 'flex-start',
             justifyContent: 'flex-start',
-            top: 5,
+            top: 10,
             left: 0,
             
             scrollTrigger: {
                 trigger: ".nameMainSection",
                 markers: true,
-                start: 'top 100px',
+                start: 'top 50px',
                 scrub: true
             }
         })
@@ -32,7 +32,7 @@ const MyNameSection = ({name_1, name_2, office, buttonText}) => {
             scrollTrigger: {
                 trigger: ".nameMainSection",
                 markers: true,
-                start: 'top 100px',
+                start: 'top 50px',
                 scrub: true,
             }
         })
@@ -42,17 +42,29 @@ const MyNameSection = ({name_1, name_2, office, buttonText}) => {
             // x: 20,
             // y: 20,
             marginTop: '30px',
+            marginLeft: '-110px',
 
             scrollTrigger: {
                 trigger: ".nameMainSection",
                 markers: true,
-                start: 'top 100px',
+                start: 'top 50px',
+                scrub: true,
+            }
+        })
+
+        gsap.to(".subTextDiv", {
+            opacity: 0,
+            y: 100,
+
+            scrollTrigger: {
+                trigger: ".nameMainSection",
+                start: 'top 50px',
                 scrub: true,
             }
         })
 
         return () => {
-            gsap.killTweensOf(".firstName, .lastName, .nameMainSection");
+            gsap.killTweensOf(".firstName, .lastName, .mainNameDiv");
         }
     }, []);
 
@@ -60,16 +72,18 @@ const MyNameSection = ({name_1, name_2, office, buttonText}) => {
     return(
         <NameSection>
             <NameDiv className="nameMainSection">
-                <FirstName className="firstName" >{name_1}</FirstName>
-                <LastName className="lastName" >{name_2}</LastName>
+                <div className="mainNameDiv">
+                    <FirstName className="firstName" >{name_1}</FirstName>
+                    <LastName className="lastName" >{name_2}</LastName>
+                </div>
 
-
-                <WhatIam className="fadeInAnimation">{office}</WhatIam>
-
-                <Button 
-                    typeEdit="view_more fadeInAnimation"
-                    text={buttonText}
-                />
+                <div className="subTextDiv">
+                    <WhatIam className="fadeInAnimation">{office}</WhatIam>
+                    <Button 
+                        typeEdit="view_more fadeInAnimation"
+                        text={buttonText}
+                        />
+                </div>
             </NameDiv>
         </NameSection>
     )

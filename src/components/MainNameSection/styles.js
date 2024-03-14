@@ -3,7 +3,7 @@ import styled from "styled-components";
 // tentar fazer circulo do gradiente entrar, dar uma volta na tela e iluminar ao carregar o site;
 // o nome teria um efeito de fade-in
 export const NameSection = styled.section`
-    background-image: radial-gradient(circle at 100% -80px, #757575, #434343, #1E1E1E 50%);
+    // background-image: radial-gradient(circle at 100% -80px, #757575, #434343, #1E1E1E 50%);
     height: 100vh;
 
     display: flex;
@@ -16,41 +16,45 @@ export const NameSection = styled.section`
 
     @keyframes fadeInAnimation {
         from {
-            transform: translate(-40px, 20px);
+            // transform: translate(-40px, 20px);
+            transform: translateY(20px);
             opacity: 0;
         }
         to {
-            transform: translate(-40px, -10px);
+            // transform: translate(-40px, 0px);
+            transform: translateY(0);
             opacity: 1;
         }
     }
 `
 
 export const NameDiv = styled.div`
+    position: relative;
     width: 70vw;
     height: 50vh;
+    min-height: 480px;
     color: #fff;
-    // background-color: red;
-    position: fixed;
+    // background-color: blue;
+
+    position: relative;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    & .fadeInAnimation {
-        animation: fadeInAnimation 2s ease-in 3.5s forwards;
+
+    & .mainNameDiv {
+        position: absolute;
+        top: 10%;
+        // background-color: cyan;
     }
 
-    @keyframes fadeInAnimation {
-        from {
-            transform: translate(-40px, 20px);
-            opacity: 0;
-        }
-        to {
-            transform: translate(-40px, -10px);
-            opacity: 1;
-        }
+    & .subTextDiv {
+        position: absolute;
+        bottom: 10%;
+        // background-color: red;
+        transform: translate(-40px, -10px);
     }
 `
 
@@ -100,7 +104,7 @@ export const LastName = styled.h1`
             opacity: 1;
         }
         100% {
-            transform: translateX(100px);
+            transform: translateX(180px);
             opacity: 1; 
         }
     }
@@ -108,8 +112,8 @@ export const LastName = styled.h1`
 
 export const WhatIam = styled.p`
     font-family: Bebas Neue, arial, sans-serif;
-    font-size: 3rem;
-    color: #b7b7b7;
+    font-size: 4rem;
+    color: #c0c0c0;
     text-shadow: 0px 3px 2px #ffffff47;
     opacity: 0;
 
