@@ -3,7 +3,7 @@ import styled from "styled-components";
 // tentar fazer circulo do gradiente entrar, dar uma volta na tela e iluminar ao carregar o site;
 // o nome teria um efeito de fade-in
 export const NameSection = styled.section`
-    // background-image: radial-gradient(circle at 100% -80px, #757575, #434343, #1E1E1E 50%);
+    background-image: radial-gradient(circle at 100% -80px, #757575, #434343, #1E1E1E 50%);
     height: 100vh;
 
     display: flex;
@@ -45,8 +45,8 @@ export const NameDiv = styled.div`
 
 
     & .mainNameDiv {
-        position: absolute;
-        top: 10%;
+        position: relative;
+        top: -10%;
         // background-color: cyan;
     }
 
@@ -65,9 +65,6 @@ export const FirstName = styled.h1`
     transform: translate(-50px, 0px);
     margin-bottom: -40px;
     opacity: 0;
-
-    // position: absolute;
-    // top: 15%;
 
     animation: enteringFirstName 3s ease-in 2s forwards;
 
@@ -88,9 +85,6 @@ export const LastName = styled.h1`
     transform: translate(100px, 0px);
     margin-bottom: 20px;
     opacity: 0;
-
-    // position: absolute;
-    // top: 33%;
 
     animation: enteringLastName 2.5s ease-in 1s forwards;
 
@@ -116,7 +110,4 @@ export const WhatIam = styled.p`
     color: #c0c0c0;
     text-shadow: 0px 3px 2px #ffffff47;
     opacity: 0;
-
-    // position: absolute;
-    // top: 62%;
 `
