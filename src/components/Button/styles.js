@@ -29,7 +29,7 @@ export const ButtonContainer = styled.div`
 
     &.view_more{
         overflow: hidden;
-        width: 50%;
+        width: 40%;
         opacity: 0;
     }
 
@@ -57,7 +57,7 @@ export const ButtonContainer = styled.div`
         background-color: #fff;
         // background-image: linear-gradient(#fff, #333, #1E1E1E);
 
-        height: 500%;
+        height: 300px;
         width: 20px;
 
         animation: rotation 3s linear 2s infinite;
