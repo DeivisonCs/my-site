@@ -126,3 +126,8 @@ export const EducationContainer = styled.section`
         gap: 30px;
     }
 `
+
+export const ContactMeContainer = styled.section`
+    background-color: cyan;
+    width: 100%;
+`
