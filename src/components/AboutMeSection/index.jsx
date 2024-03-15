@@ -17,11 +17,10 @@ const AboutMeSection = ({title, text}) => {
                 scrollTrigger: {
                     trigger: ".AboutMeContent",
                     scrub: true,
-                    markers: true,
+                    // markers: true,
                     start: "top 900px",
                     end: "top 600px"
                 }
-                
             })
             .fromTo("#about-me-title", {
                 opacity: 0,
