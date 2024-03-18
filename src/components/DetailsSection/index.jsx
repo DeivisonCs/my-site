@@ -15,7 +15,7 @@ const DetailsSection = () => {
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
-// --------------------- Skills Section Animation ---------------------
+    // --------------------- Skills Section Animation ---------------------
         gsap.context(() => {
 
             skillTimeline.current = gsap.timeline({
@@ -51,7 +51,7 @@ const DetailsSection = () => {
         }, skillSection_Ref)
 
 
-// --------------------- Education Section Animation ---------------------
+    // --------------------- Education Section Animation ---------------------
         gsap.context(() => {
 
             educationTimeline.current = gsap.timeline({
@@ -117,7 +117,7 @@ const DetailsSection = () => {
 
             <EducationContainer ref={educationSection_Ref}>
                 <h2 className="education-content" id="education-title">Education</h2>
-                <span className="title_undercore education-content" id="education-title"></span>
+                <span className="title_undercore education-content" id="education-underscore"></span>
 
                 <ul className="education-content" id="education-list">
                     <li>

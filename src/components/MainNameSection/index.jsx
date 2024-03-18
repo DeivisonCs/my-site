@@ -1,69 +1,11 @@
-import {React, useLayoutEffect} from "react";
+import React from "react";
 import {NameSection, NameDiv, FirstName, LastName, WhatIam} from "./styles";
 import { Button } from "../Button";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 const MyNameSection = ({name_1, name_2, office, buttonText}) => {
-    
-    useLayoutEffect(() => {
-
-        gsap.registerPlugin(ScrollTrigger);
-        gsap.to(".mainNameDiv", {
-            position: 'fixed',
-            top: "10px",
-            left: 20,
-            
-            scrollTrigger: {
-                trigger: ".nameMainSection",
-                // markers: true,
-                start: 'top 50px',
-                scrub: true
-            }
-        })
-
-        gsap.to('.firstName', {
-            fontSize: "1.5rem",
-            x: 20,
-
-            scrollTrigger: {
-                trigger: ".nameMainSection",
-                // markers: true,
-                start: 'top 50px',
-                scrub: true,
-            }
-        })
-        
-        gsap.to('.lastName', {
-            fontSize: "1.5rem",
-            marginTop: '30px',
-            marginLeft: '-110px',
-
-            scrollTrigger: {
-                trigger: ".nameMainSection",
-                // markers: true,
-                start: 'top 50px',
-                scrub: true,
-            }
-        })
-
-        gsap.to(".subTextDiv", {
-            opacity: 0,
-            y: 300,
-
-            scrollTrigger: {
-                trigger: ".nameMainSection",
-                start: 'top 50px',
-                scrub: true,
-            }
-        })
-
-        return () => {
-            gsap.killTweensOf(".firstName, .lastName, .mainNameDiv");
-        }
-    }, []);
-
 
     return(
         <NameSection>
