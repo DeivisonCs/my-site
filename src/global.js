@@ -13,5 +13,6 @@ export const GlobalStyle = createGlobalStyle`
         // background-image: radial-gradient(circle at 100% -50px, #fff, #434343, #1E1E1E 50%);
         height: 100%;
         overflow-X: hidden;
+        overscroll-behavior: none;
     }
 `

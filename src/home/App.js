@@ -3,6 +3,7 @@ import {Header} from "../components/Header"
 import {MyNameSection} from "../components/MainNameSection"
 import {AboutMeSection} from "../components/AboutMeSection"
 import {DetailsSection} from "../components/DetailsSection"
+import {Projects} from "../components/ProjectsSection"
 
 function App() {
     return (
@@ -15,7 +16,7 @@ function App() {
         />
 
         <DetailsSection/>
-
+        <Projects/>
     </>
     );
 }

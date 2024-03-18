@@ -127,7 +127,7 @@ export const EducationContainer = styled.section`
     }
 `
 
-export const ContactMeContainer = styled.section`
-    background-color: cyan;
-    width: 100%;
-`
+// export const ContactMeContainer = styled.section`
+//     background-color: cyan;
+//     width: 100%;
+// `
