@@ -3,6 +3,10 @@ import { OuterContainer, ContentContainer } from "./styles";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import calculatorProject from "../../imgs/calculatorProject.png";
+import appleProject from "../../imgs/landingPageProject.png";
+import inputValidation from "../../imgs/inputValidationProject.png";
+
 
 const Projects = () => {
 
@@ -10,8 +14,8 @@ const Projects = () => {
 
         gsap.registerPlugin(ScrollTrigger);
 
+        // --------------- Horizontal Scroll -----------------------
         let projects = gsap.utils.toArray(".projectContainer");
-
         gsap.to(projects, {
             xPercent: -100 * (projects.length -1),
             ease: "none",
@@ -33,11 +37,11 @@ const Projects = () => {
     return (
         <OuterContainer className="projectsSection">
             <ContentContainer className="projectContainer">
-                <a>
-                    <img src="" alt="" />
+                <a className="projectImage" href="https://calculator-react-rosy-alpha.vercel.app/" target="_blank">
+                    <img src={calculatorProject} alt="Project Image" />
                 </a>
 
-                <h1>Project Name</h1>
+                <h2>Calculator</h2>
 
                 <div className="tecnologiesUsed">
                     <span>
@@ -62,11 +66,11 @@ const Projects = () => {
             </ContentContainer>
 
             <ContentContainer className="projectContainer">
-                <a>
-                    <img src="" alt="" />
+                <a className="projectImage" href="https://deivisoncs.github.io/Product-Landing-Page/" target="_blank">
+                    <img src={appleProject} alt="Project Image" />
                 </a>
 
-                <h1>Project Name</h1>
+                <h2>iPhone Page</h2>
 
                 <div className="tecnologiesUsed">
                     <span>
@@ -79,11 +83,11 @@ const Projects = () => {
             </ContentContainer>
 
             <ContentContainer className="projectContainer">
-                <a>
-                    <img src="" alt="" />
+                <a className="projectImage" href="https://deivisoncs.github.io/InputValidation-JS/" target="_blank">
+                    <img src={inputValidation} alt="Project Image" />
                 </a>
 
-                <h1>Project Name</h1>
+                <h2>Input Validation</h2>
 
                 <div className="tecnologiesUsed">
                     <span>
@@ -96,11 +100,11 @@ const Projects = () => {
             </ContentContainer>
             
             <ContentContainer className="projectContainer">
-                <a>
-                    <img src="" alt="" />
+                <a className="projectImage" href="#" target="_blank">
+                    <img src="" alt="Project Image" />
                 </a>
 
-                <h1>Project Name</h1>
+                <h2>Project Name</h2>
 
                 <div className="tecnologiesUsed">
                     <span>
@@ -113,11 +117,11 @@ const Projects = () => {
             </ContentContainer>
 
             <ContentContainer className="projectContainer">
-                <a>
-                    <img src="" alt="" />
+                <a className="projectImage" href="#" target="_blank">
+                    <img src="" alt="Project Image" />
                 </a>
 
-                <h1>Project Name</h1>
+                <h2>Project Name</h2>
 
                 <div className="tecnologiesUsed">
                     <span>

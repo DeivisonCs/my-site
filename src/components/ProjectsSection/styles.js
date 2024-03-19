@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const OuterContainer = styled.section`
     width: 500%;
-    height: 80vh;
+    height: 100vh;
     // background-color: cyan;
 
     display: flex;
@@ -24,6 +24,22 @@ export const ContentContainer = styled.div`
     align-items: center;
     justify-content: center;
     gap: 30px;
+
+
+    & .projectImage img {
+        height: 500px;
+        border-radius: 20px;
+        margin-bottom: -20px;
+    }
+    & .projectImage img:hover {
+        box-shadow: 0px 0px 5px #333;
+        scale: 1.01;
+        cursor: pointer;
+    }
+
+    & h2 {
+        font-size: 2rem;
+    }
 
     & p{
         text-align: justify;
