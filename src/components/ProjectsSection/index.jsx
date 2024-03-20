@@ -10,6 +10,7 @@ import MyGallery from "../../imgs/GalleryProject.png";
 import Pokedex from "../../imgs/PokedexProject.png";
 
 import arrow_forward from "../../imgs/arrow_forward.svg";
+import arrow_back from "../../imgs/arrow_back.svg";
 
 
 const Projects = () => {
@@ -29,8 +30,8 @@ const Projects = () => {
                 scrub: 1,
                 pin: true,
                 start: "top top",
-                markers:true,
-                // snap: 1 / (projects.length - 1),
+                // markers:true,
+                snap: 1 / (projects.length - 1),
                 // Define o fim do scroll lateral
                 end: "right 10%"
             }
@@ -73,10 +74,12 @@ const Projects = () => {
 
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error minus asperiores dolores tempore labore eius voluptatem exercitationem alias quam laborum. Dolorum est repudiandae itaque aut placeat fugiat vero quo velit?</p>
 
-                <img src={arrow_forward} alt="Arrow Forward" className="forward_arrow"/>
+                <img src={arrow_forward} alt="Arrow Forward" className="forward_arrow direction_arrow"/>
             </ContentContainer>
 
             <ContentContainer className="projectContainer">
+            <img src={arrow_back} alt="Arrow Back" className="back_arrow direction_arrow"/>
+
                 <a className="projectImage" href="https://deivisoncs.github.io/Product-Landing-Page/" target="_blank" rel="noopener noreferrer">
                     <img src={appleProject} alt="Project" />
                 </a>
@@ -92,10 +95,12 @@ const Projects = () => {
 
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error minus asperiores dolores tempore labore eius voluptatem exercitationem alias quam laborum. Dolorum est repudiandae itaque aut placeat fugiat vero quo velit?</p>
 
-                <img src={arrow_forward} alt="Arrow Forward" className="forward_arrow"/>
+                <img src={arrow_forward} alt="Arrow Forward" className="forward_arrow direction_arrow"/>
             </ContentContainer>
 
             <ContentContainer className="projectContainer">
+                <img src={arrow_back} alt="Arrow Back" className="back_arrow direction_arrow"/>
+
                 <a className="projectImage" href="https://deivisoncs.github.io/InputValidation-JS/" target="_blank" rel="noopener noreferrer">
                     <img src={inputValidation} alt="Project" />
                 </a>
@@ -111,10 +116,12 @@ const Projects = () => {
 
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error minus asperiores dolores tempore labore eius voluptatem exercitationem alias quam laborum. Dolorum est repudiandae itaque aut placeat fugiat vero quo velit?</p>
 
-                <img src={arrow_forward} alt="Arrow Forward" className="forward_arrow"/>
+                <img src={arrow_forward} alt="Arrow Forward" className="forward_arrow direction_arrow"/>
             </ContentContainer>
             
             <ContentContainer className="projectContainer">
+                <img src={arrow_back} alt="Arrow Back" className="back_arrow direction_arrow"/>
+
                 <a className="projectImage" href="https://deivisoncs.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">
                     <img src={MyGallery} alt="Project" />
                 </a>
@@ -130,10 +137,12 @@ const Projects = () => {
 
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error minus asperiores dolores tempore labore eius voluptatem exercitationem alias quam laborum. Dolorum est repudiandae itaque aut placeat fugiat vero quo velit?</p>
 
-                <img src={arrow_forward} alt="Arrow Forward" className="forward_arrow"/>
+                <img src={arrow_forward} alt="Arrow Forward" className="forward_arrow direction_arrow"/>
             </ContentContainer>
 
             <ContentContainer className="projectContainer">
+                <img src={arrow_back} alt="Arrow Back" className="back_arrow direction_arrow"/>
+
                 <a className="projectImage" href="https://deivisoncs.github.io/Pokedex/" target="_blank" rel="noopener noreferrer">
                     <img src={Pokedex} alt="Project" />
                 </a>

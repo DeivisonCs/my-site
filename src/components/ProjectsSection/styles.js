@@ -64,12 +64,18 @@ export const ContentContainer = styled.div`
         height: 20px;
     }
 
-    & img.forward_arrow {
+    & img.direction_arrow {
         position: absolute;
-        right: 10%;
-        top: 30%;
-
         opacity: .4;
         width: 80px;
+        top: 30%;  
+    }
+
+    & img.forward_arrow {    
+        right: 10%;
+    }
+
+    & img.back_arrow {    
+        left: 10%; 
     }
 `
