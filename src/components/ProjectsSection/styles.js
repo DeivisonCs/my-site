@@ -19,6 +19,8 @@ export const ContentContainer = styled.div`
     padding: 40px;
     color: #fff;
 
+    position: relative;
+
 
     display: flex;
     flex-direction: column;
@@ -60,5 +62,14 @@ export const ContentContainer = styled.div`
         border-radius: 5px;
         width: 20px;
         height: 20px;
+    }
+
+    & img.forward_arrow {
+        position: absolute;
+        right: 10%;
+        top: 30%;
+
+        opacity: .4;
+        width: 80px;
     }
 `

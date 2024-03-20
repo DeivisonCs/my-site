@@ -9,6 +9,8 @@ import inputValidation from "../../imgs/inputValidationProject.png";
 import MyGallery from "../../imgs/GalleryProject.png";
 import Pokedex from "../../imgs/PokedexProject.png";
 
+import arrow_forward from "../../imgs/arrow_forward.svg";
+
 
 const Projects = () => {
     
@@ -27,10 +29,10 @@ const Projects = () => {
                 scrub: 1,
                 pin: true,
                 start: "top top",
-                // markers:true,
+                markers:true,
                 // snap: 1 / (projects.length - 1),
                 // Define o fim do scroll lateral
-                end: "right 25%"
+                end: "right 10%"
             }
         });
 
@@ -70,6 +72,8 @@ const Projects = () => {
 
 
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error minus asperiores dolores tempore labore eius voluptatem exercitationem alias quam laborum. Dolorum est repudiandae itaque aut placeat fugiat vero quo velit?</p>
+
+                <img src={arrow_forward} alt="Arrow Forward" className="forward_arrow"/>
             </ContentContainer>
 
             <ContentContainer className="projectContainer">
@@ -87,6 +91,8 @@ const Projects = () => {
 
 
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error minus asperiores dolores tempore labore eius voluptatem exercitationem alias quam laborum. Dolorum est repudiandae itaque aut placeat fugiat vero quo velit?</p>
+
+                <img src={arrow_forward} alt="Arrow Forward" className="forward_arrow"/>
             </ContentContainer>
 
             <ContentContainer className="projectContainer">
@@ -104,6 +110,8 @@ const Projects = () => {
 
 
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error minus asperiores dolores tempore labore eius voluptatem exercitationem alias quam laborum. Dolorum est repudiandae itaque aut placeat fugiat vero quo velit?</p>
+
+                <img src={arrow_forward} alt="Arrow Forward" className="forward_arrow"/>
             </ContentContainer>
             
             <ContentContainer className="projectContainer">
@@ -121,6 +129,8 @@ const Projects = () => {
 
 
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error minus asperiores dolores tempore labore eius voluptatem exercitationem alias quam laborum. Dolorum est repudiandae itaque aut placeat fugiat vero quo velit?</p>
+
+                <img src={arrow_forward} alt="Arrow Forward" className="forward_arrow"/>
             </ContentContainer>
 
             <ContentContainer className="projectContainer">
