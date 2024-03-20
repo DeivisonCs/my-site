@@ -66,7 +66,7 @@ export const ContentContainer = styled.div`
 
     & img.direction_arrow {
         position: absolute;
-        opacity: .4;
+        opacity: .2;
         width: 80px;
         top: 30%;  
     }

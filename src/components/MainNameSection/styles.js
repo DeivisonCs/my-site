@@ -59,7 +59,7 @@ export const NameDiv = styled.div`
 `
 
 export const FirstName = styled.h1`
-    font-family: Cinzel Decorative, arial, sans-serif;
+    font-family: CinzelDecorative, arial, sans-serif;
     font-size: 6.5em;
     text-shadow: -4px 5px 2px #000;
     margin-bottom: -40px;
@@ -80,7 +80,7 @@ export const FirstName = styled.h1`
 `
 
 export const LastName = styled.h1`
-    font-family: Cinzel Decorative, arial, sans-serif;
+    font-family: CinzelDecorative, arial, sans-serif;
     font-size: 5.8rem;
     text-shadow: -4px 5px 2px #000;
     transform: translate(100px, 0px);
@@ -106,10 +106,13 @@ export const LastName = styled.h1`
 `
 
 export const WhatIam = styled.p`
-    font-family: Great Vibes, arial, sans-serif;
+
+    font-family: GreatVibes, arial, sans-serif;
+    text-align: center;
     letter-spacing: .7rem;
     font-size: 4rem;
     color: #c0c0c0;
+
     text-shadow: 0px 3px 2px #ffffff47;
     opacity: 0;
 `

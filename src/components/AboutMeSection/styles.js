@@ -16,7 +16,7 @@ export const AboutMeDiv = styled.section`
         color: #b7b7b7;
         font-size: 4rem;
         text-align: center;
-        font-family: Bebas Neue, Arial;
+        font-family: BebasNeue, Arial;
         letter-spacing: .7rem;
     }
 
