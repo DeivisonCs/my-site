@@ -6,10 +6,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import calculatorProject from "../../imgs/calculatorProject.png";
 import appleProject from "../../imgs/landingPageProject.png";
 import inputValidation from "../../imgs/inputValidationProject.png";
+import MyGallery from "../../imgs/GalleryProject.png";
+import Pokedex from "../../imgs/PokedexProject.png";
 
 
 const Projects = () => {
-
+    
     useLayoutEffect(() => {
 
         gsap.registerPlugin(ScrollTrigger);
@@ -24,8 +26,11 @@ const Projects = () => {
                 trigger: ".projectsSection",
                 scrub: 1,
                 pin: true,
+                start: "top top",
+                // markers:true,
+                // snap: 1 / (projects.length - 1),
                 // Define o fim do scroll lateral
-                end: "+=2800"
+                end: "right 25%"
             }
         });
 
@@ -35,10 +40,12 @@ const Projects = () => {
     })
 
     return (
-        <OuterContainer className="projectsSection">
+    <>
+        <OuterContainer className="projectsSection" id="projectViewControler">
+
             <ContentContainer className="projectContainer">
-                <a className="projectImage" href="https://calculator-react-rosy-alpha.vercel.app/" target="_blank">
-                    <img src={calculatorProject} alt="Project Image" />
+                <a className="projectImage" href="https://calculator-react-rosy-alpha.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <img src={calculatorProject} alt="Project" />
                 </a>
 
                 <h2>Calculator</h2>
@@ -66,8 +73,8 @@ const Projects = () => {
             </ContentContainer>
 
             <ContentContainer className="projectContainer">
-                <a className="projectImage" href="https://deivisoncs.github.io/Product-Landing-Page/" target="_blank">
-                    <img src={appleProject} alt="Project Image" />
+                <a className="projectImage" href="https://deivisoncs.github.io/Product-Landing-Page/" target="_blank" rel="noopener noreferrer">
+                    <img src={appleProject} alt="Project" />
                 </a>
 
                 <h2>iPhone Page</h2>
@@ -83,8 +90,8 @@ const Projects = () => {
             </ContentContainer>
 
             <ContentContainer className="projectContainer">
-                <a className="projectImage" href="https://deivisoncs.github.io/InputValidation-JS/" target="_blank">
-                    <img src={inputValidation} alt="Project Image" />
+                <a className="projectImage" href="https://deivisoncs.github.io/InputValidation-JS/" target="_blank" rel="noopener noreferrer">
+                    <img src={inputValidation} alt="Project" />
                 </a>
 
                 <h2>Input Validation</h2>
@@ -100,11 +107,11 @@ const Projects = () => {
             </ContentContainer>
             
             <ContentContainer className="projectContainer">
-                <a className="projectImage" href="#" target="_blank">
-                    <img src="" alt="Project Image" />
+                <a className="projectImage" href="https://deivisoncs.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">
+                    <img src={MyGallery} alt="Project" />
                 </a>
 
-                <h2>Project Name</h2>
+                <h2>My Gallery</h2>
 
                 <div className="tecnologiesUsed">
                     <span>
@@ -117,11 +124,11 @@ const Projects = () => {
             </ContentContainer>
 
             <ContentContainer className="projectContainer">
-                <a className="projectImage" href="#" target="_blank">
-                    <img src="" alt="Project Image" />
+                <a className="projectImage" href="https://deivisoncs.github.io/Pokedex/" target="_blank" rel="noopener noreferrer">
+                    <img src={Pokedex} alt="Project" />
                 </a>
 
-                <h2>Project Name</h2>
+                <h2>Pokedex</h2>
 
                 <div className="tecnologiesUsed">
                     <span>
@@ -132,7 +139,9 @@ const Projects = () => {
 
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error minus asperiores dolores tempore labore eius voluptatem exercitationem alias quam laborum. Dolorum est repudiandae itaque aut placeat fugiat vero quo velit?</p>
             </ContentContainer>
+            
         </OuterContainer>
+    </>
     )
 };
 

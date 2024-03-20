@@ -4,16 +4,17 @@ export const OuterContainer = styled.section`
     width: 500%;
     height: 100vh;
     // background-color: cyan;
+    overscroll-behavior: none;
 
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+
 `
 
 export const ContentContainer = styled.div`
     // background-color: blue;
     width: 80%;
-    max-width: 800px;
     height: 70%;
     padding: 40px;
     color: #fff;
