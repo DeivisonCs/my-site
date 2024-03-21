@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
         background-color: #1E1E1E;
         height: 100vh;
         overflow-X: hidden;
-        overscroll-behavior: none;
+
+        // overscroll-behavior: smooth;
     }
 `
