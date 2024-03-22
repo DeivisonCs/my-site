@@ -1,5 +1,5 @@
 import { React, useLayoutEffect, useRef } from "react";
-import { DetailsContainer, SkillsContainer, EducationContainer, ContactMeContainer } from "./styles";
+import { DetailsContainer, SkillsContainer, EducationContainer } from "./styles";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -95,7 +95,7 @@ const DetailsSection = () => {
 
     return (
         <DetailsContainer>
-            <SkillsContainer className="skillsContainer" ref={skillSection_Ref}>
+            <SkillsContainer className="skillsContainer" id="Skills_Section" ref={skillSection_Ref}>
                 <h2 className="skillContent" id="skill-title">Skills</h2>
                 <span className="title_undercore skillContent" id="skill-underscore"></span>
 
@@ -115,7 +115,7 @@ const DetailsSection = () => {
                 </ul>
             </SkillsContainer>
 
-            <EducationContainer ref={educationSection_Ref}>
+            <EducationContainer id="Education_Section" ref={educationSection_Ref}>
                 <h2 className="education-content" id="education-title">Education</h2>
                 <span className="title_undercore education-content" id="education-underscore"></span>
 
@@ -144,19 +144,5 @@ const DetailsSection = () => {
 
     )
 }
-
-    // <ContactMeContainer>
-    //     <h2>Contact Me</h2>
-    //     <span></span>
-
-    //     <ul>
-    //         <li>
-    //             {/* Img da Rede */}
-    //             <img src="" alt="" />
-    //             {/* Nome da Rede */}
-    //             <span></span>
-    //         </li>
-    //     </ul>
-    // </ContactMeContainer>
 
 export { DetailsSection };

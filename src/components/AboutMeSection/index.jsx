@@ -52,7 +52,7 @@ const AboutMeSection = ({title, text}) => {
 
 
     return(
-        <AboutMeDiv className="AboutMeSection" ref={aboutRef}>
+        <AboutMeDiv className="AboutMeSection" id="aboutMe" ref={aboutRef}>
             <h2 className="AboutMeContent" id="about-me-title">{title}</h2>
             <span className="AboutMeContent" id="about-me-underline"></span>
 

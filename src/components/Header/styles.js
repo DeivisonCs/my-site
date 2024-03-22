@@ -5,7 +5,6 @@ export const HeaderContainer = styled.div `
     width: 100vw;
     padding: 30px;
     opacity: .4;
-    // transform: translateY(-80px);
 
     z-index: 1;
     position: fixed;
@@ -17,19 +16,6 @@ export const HeaderContainer = styled.div `
     &:hover {
         opacity: 1;
     }
-
-
-    // animation: fadeInHeaderAnimation 2s 3s;
-
-    // @keyframes fadeInHeaderAnimation {
-    //     from {
-    //         opacity: 0;
-    //     }
-    //     to {
-    //         opacity: .4;
-    //         transform: translateY(0);
-    //     }
-    // }
 `
 
 export const ButtonsContainer = styled.div`
@@ -39,7 +25,7 @@ export const ButtonsContainer = styled.div`
     align-items: center;
     gap: 15px;
 
-    display: none;
+    // display: none;
 `
 
 export const NameContainer = styled.div`
@@ -64,11 +50,12 @@ export const NameContainer = styled.div`
 `
 
 export const NavHiddenMenu = styled.div`
-    // background-color: cyan;
     width: 50px;
     height: 50px;
     cursor: pointer;
     // transform: translateX(30px);
+
+    display: none;
 
     position: relative;
 
@@ -88,14 +75,13 @@ export const NavHiddenMenu = styled.div`
 
     @keyframes activatedMenu {
         to {
-            height: 135px;
+            height: 184px;
             opacity: 1;
         }
     }
 
     // -------------- Menu Bars -----------------
     & .menuBars {
-        // background-color: #000;
         width: 100%;
         height: 100%;
         padding: 10px 5px;
@@ -162,7 +148,14 @@ export const NavHiddenMenu = styled.div`
         overflow: hidden;
     }
 
-    & .hiddenMenu a {
+    & .hiddenMenu button {
+        background-color: transparent;
+        font-family: BebasNeue, arial, sans-serif;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        
         border: solid 1px #fff;
         border-top: none;
 

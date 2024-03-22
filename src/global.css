@@ -11,3 +11,13 @@
     font-family: 'BebasNeue';
     src: url('fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
 }
+
+@media screen and (max-width: 1200px) {
+    #visibleMenu {
+        display: none;
+    }
+
+    #ocultMenu {
+        display: flex;
+    }
+}
