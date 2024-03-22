@@ -16,8 +16,29 @@
     #visibleMenu {
         display: none;
     }
-
     #ocultMenu {
         display: flex;
     }
+    #changeFontSizeFirstName {
+        font-size: 11vw;
+    }
+    #changeFontSizeLastName {
+        font-size: 10vw;
+    }
+    #mainContentSubText p {
+        font-size: 7vw;
+    }
 }
+
+/* @media screen and (max-width: 725px) {
+    #changeFontSizeFirstName {
+        font-size: 8vw;
+    }
+    #changeFontSizeLastName {
+        font-size: 5em;
+    }
+    #mainContentSubText p {
+        font-size: 3.5rem;
+    }
+}
+ */

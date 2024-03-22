@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-// tentar fazer circulo do gradiente entrar, dar uma volta na tela e iluminar ao carregar o site;
-// o nome teria um efeito de fade-in
 export const NameSection = styled.section`
     background-image: radial-gradient(circle at 100% -80px, #757575, #434343, #1E1E1E 50%);
     height: 100vh;
@@ -17,7 +15,6 @@ export const NameSection = styled.section`
     @keyframes fadeInAnimation {
         from {
             transform: translateY(20px);
-            opacity: 0;
         }
         to {
             transform: translateY(0);
@@ -50,7 +47,7 @@ export const NameDiv = styled.div`
         position: absolute;
         bottom: 10%;
         // background-color: red;
-        transform: translate(-40px, -10px);
+        // transform: translate(-40px, -10px);
 
         display: flex;
         flex-direction: column;
@@ -60,49 +57,55 @@ export const NameDiv = styled.div`
 
 export const FirstName = styled.h1`
     font-family: CinzelDecorative, arial, sans-serif;
-    font-size: 6.5em;
+    font-size: 8vw;
     text-shadow: -4px 5px 2px #000;
+
     margin-bottom: -40px;
     opacity: 0;
 
-    animation: enteringFirstName 3s ease-in 2s forwards;
+    // transform: translateY(-50px);
 
-    @keyframes enteringFirstName {
-        from {
-            transform: translateY(-50px);
-            opacity:0;
-        }
-        to {
-            transform: translateY(0px);
-            opacity: 1; 
-        }
-    }
+    // animation: enteringFirstName 3s ease-in 2s forwards;
+
+    // @keyframes enteringFirstName {
+    //     from {
+    //         transform: translateY(-50px);
+    //         opacity:0;
+    //     }
+    //     to {
+    //         transform: translateY(0px);
+    //         opacity: 1; 
+    //     }
+    // }
 `
 
 export const LastName = styled.h1`
     font-family: CinzelDecorative, arial, sans-serif;
-    font-size: 5.8rem;
+    // font-size: 5.8rem;
+    font-size: 7vw;
     text-shadow: -4px 5px 2px #000;
-    transform: translate(100px, 0px);
+    transform: translate(150px, 5px);
     margin-bottom: 20px;
-    opacity: 0;
 
-    animation: enteringLastName 2.5s ease-in 1s forwards;
+    // opacity: 0;
 
-    @keyframes enteringLastName {
-        10% {
-            transform: translateX(600px);
-            opacity: 0;
-        }
-        90% {
-            transform: translateX(50px);
-            opacity: 1;
-        }
-        100% {
-            transform: translateX(180px);
-            opacity: 1; 
-        }
-    }
+    // animation: enteringLastName 2.5s ease-in 1s forwards;
+
+    // @keyframes enteringLastName {
+    //     10% {
+    //         transform: translateX(600px);
+    //         opacity: 0;
+    //     }
+    //     90% {
+    //         transform: translateX(50px);
+    //         opacity: 1;
+    //     }
+    //     100% {
+    //         // transform: translateX(180px);
+    //         transform: translate(40%, 30%);
+    //         opacity: 1; 
+    //     }
+    // }
 `
 
 export const WhatIam = styled.p`
