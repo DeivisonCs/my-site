@@ -47,7 +47,6 @@ export const NameDiv = styled.div`
         position: absolute;
         bottom: 10%;
         // background-color: red;
-        // transform: translate(-40px, -10px);
 
         display: flex;
         flex-direction: column;
@@ -62,50 +61,15 @@ export const FirstName = styled.h1`
 
     margin-bottom: -40px;
     opacity: 0;
-
-    // transform: translateY(-50px);
-
-    // animation: enteringFirstName 3s ease-in 2s forwards;
-
-    // @keyframes enteringFirstName {
-    //     from {
-    //         transform: translateY(-50px);
-    //         opacity:0;
-    //     }
-    //     to {
-    //         transform: translateY(0px);
-    //         opacity: 1; 
-    //     }
-    // }
 `
 
 export const LastName = styled.h1`
     font-family: CinzelDecorative, arial, sans-serif;
-    // font-size: 5.8rem;
     font-size: 7vw;
     text-shadow: -4px 5px 2px #000;
     transform: translate(150px, 5px);
     margin-bottom: 20px;
 
-    // opacity: 0;
-
-    // animation: enteringLastName 2.5s ease-in 1s forwards;
-
-    // @keyframes enteringLastName {
-    //     10% {
-    //         transform: translateX(600px);
-    //         opacity: 0;
-    //     }
-    //     90% {
-    //         transform: translateX(50px);
-    //         opacity: 1;
-    //     }
-    //     100% {
-    //         // transform: translateX(180px);
-    //         transform: translate(40%, 30%);
-    //         opacity: 1; 
-    //     }
-    // }
 `
 
 export const WhatIam = styled.p`

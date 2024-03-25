@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonText  = styled.a`
+export const ButtonText  = styled.button`
     background-color: #ffffff2c;
     color: #fff;
     font-family: BebasNeue, Arial;
@@ -33,7 +33,7 @@ export const ButtonContainer = styled.div`
         opacity: 0;
     }
 
-    &.view_more a{
+    &.view_more button{
         font-size: 1.2rem;
         border-radius: 30px;
         padding: 7px 20px;
@@ -44,7 +44,7 @@ export const ButtonContainer = styled.div`
         background-color: transparent;
     }
 
-    &.view_more a:hover {
+    &.view_more button:hover {
         color: #fff;
         text-shadow: 0px 0px 7px #fff;
         letter-spacing: 2px;

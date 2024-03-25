@@ -4,11 +4,17 @@ import { Button } from "../Button"
 
 const Header = () => {
 
-    const scrollTo = (sectionId) => {
-        let section = document.getElementById(sectionId);
+    const activeMenu = () => {
+        const menu = document.getElementById('ocultMenu');
+        const buttonsMenu = document.getElementById('buttonsNavHiddenMenu');
 
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
+        if(menu.classList.value.includes('menuHiddenButton')){
+            menu.classList.remove('menuHiddenButton');
+            buttonsMenu.classList.remove('navButtonsMenuHidden');
+        }
+        else {
+            menu.classList.add('menuHiddenButton');
+            buttonsMenu.classList.add('navButtonsMenuHidden');
         }
     }
 
@@ -22,25 +28,31 @@ const Header = () => {
 
 
             <ButtonsContainer id="visibleMenu">
-                <Button text="About Me"/>
-                <Button text="Skills"/>
-                <Button text="Education"/>
-                <Button text="Contac Me"/>
+                <Button linkedTo="aboutMe" text="About Me"/>
+                <Button linkedTo="Skills_Section" text="Skills"/>
+                <Button linkedTo="Education_Section" text="Education"/>
+                <Button linkedTo="projectViewControler" text="Projects"/>
+                <Button linkedTo="aboutMe" text="Contac Me"/>
             </ButtonsContainer>
 
-            <NavHiddenMenu id="ocultMenu">
+            <NavHiddenMenu id="ocultMenu" onClick={() => activeMenu()}>
                 <div className="menuBars">
                     <span id="menuBar1"></span>
                     <span id="menuBar2"></span>
                     <span id="menuBar3"></span>
                 </div>
                 
-                <ButtonsContainer className="hiddenMenu">
-                    <button onClick={() => scrollTo("aboutMe")}>About Me</button>
-                    <button onClick={() => scrollTo("Skills_Section")}>Skills</button>
-                    <button onClick={() => scrollTo("Education_Section")}>Education</button>
+                <ButtonsContainer id="buttonsNavHiddenMenu" className="hiddenMenu">
+                    <Button linkedTo="aboutMe" text="About Me"/>
+                    <Button linkedTo="Skills_Section" text="Skills"/>
+                    <Button linkedTo="Education_Section" text="Education"/>
+                    <Button linkedTo="projectViewControler" text="Projects"/>
+                    <Button linkedTo="aboutMe" text="Contact Me"/>
+                    {/* <button onClick={() => scrollTo("aboutMe")}>About Me</button> */}
+                    {/* <button onClick={() => scrollTo("Skills_Section")}>Skills</button> */}
+                    {/* <button onClick={() => scrollTo("Education_Section")}>Education</button>
                     <button onClick={() => scrollTo("projectViewControler")}>Projects</button>
-                    <button onClick={() => scrollTo("aboutMe")}>Contact Me</button>
+                    <button onClick={() => scrollTo("aboutMe")}>Contact Me</button> */}
                 </ButtonsContainer>
             </NavHiddenMenu>
         </HeaderContainer>

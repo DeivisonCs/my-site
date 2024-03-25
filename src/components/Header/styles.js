@@ -53,32 +53,30 @@ export const NavHiddenMenu = styled.div`
     width: 50px;
     height: 50px;
     cursor: pointer;
-    // transform: translateX(30px);
 
     display: none;
-
     position: relative;
 
-    &:hover {
-        animation: activatedMenuBottom .3s ease-in-out .1s forwards;
-    }
-    &:hover .hiddenMenu {
-        animation: activatedMenu .4s ease-in-out .2s forwards;
-    }
+    // &:hover {
+    //     animation: activatedMenuBottom .3s ease-in-out .1s forwards;
+    // }
+    // &:hover .hiddenMenu {
+    //     animation: activatedMenu .4s ease-in-out .2s forwards;
+    // }
 
 
-    @keyframes activatedMenuBottom {
-        to {
-            width: 100px;
-        }
-    }
+    // @keyframes activatedMenuBottom {
+    //     to {
+    //         width: 100px;
+    //     }
+    // }
 
-    @keyframes activatedMenu {
-        to {
-            height: 184px;
-            opacity: 1;
-        }
-    }
+    // @keyframes activatedMenu {
+    //     to {
+    //         height: 184px;
+    //         opacity: 1;
+    //     }
+    // }
 
     // -------------- Menu Bars -----------------
     & .menuBars {
@@ -142,7 +140,6 @@ export const NavHiddenMenu = styled.div`
         gap: 0;
         
         position: absolute;
-        // left: -100%;
         top: 100%;
 
         overflow: hidden;
@@ -157,10 +154,11 @@ export const NavHiddenMenu = styled.div`
         letter-spacing: 2px;
         
         border: solid 1px #fff;
+        border-radius: 0px;
         border-top: none;
 
         padding: 7px;
-        width: 100%;
+        width: 100px;
 
         text-align: center;
         cursor: pointer;

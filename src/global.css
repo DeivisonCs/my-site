@@ -30,15 +30,23 @@
     }
 }
 
-/* @media screen and (max-width: 725px) {
-    #changeFontSizeFirstName {
-        font-size: 8vw;
-    }
-    #changeFontSizeLastName {
-        font-size: 5em;
-    }
-    #mainContentSubText p {
-        font-size: 3.5rem;
+.menuHiddenButton {
+    animation: activatedMenuBottom .3s ease-in-out .1s forwards;
+}
+.navButtonsMenuHidden {
+    animation: activatedMenu .4s ease-in-out .2s forwards;
+}
+
+
+@keyframes activatedMenuBottom {
+    to {
+        width: 100px;
     }
 }
- */
+
+@keyframes activatedMenu {
+    to {
+        height: 184px;
+        opacity: 1;
+    }
+}
