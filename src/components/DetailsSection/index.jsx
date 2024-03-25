@@ -23,8 +23,8 @@ const DetailsSection = () => {
                     trigger: ".skillContent",
                     scrub: true,
                     // markers: true,
-                    start: "top 900px",
-                    end: "top 500px"
+                    start: "top 70%",
+                    end: "top 30%"
                 }
             })
             .fromTo("#skill-title", {
@@ -59,8 +59,8 @@ const DetailsSection = () => {
                     trigger: ".education-content",
                     scrub: true,
                     // markers: true,
-                    start: "top 900px",
-                    end: "top 600px"
+                    start: "top 70%",
+                    end: "top 45%"
                 }
             })
             .fromTo("#education-title", {

@@ -3,13 +3,13 @@ import styled from "styled-components";
 export const DetailsContainer = styled.div`
     height: fit-content;
     padding: 30px;
-    margin-top: 50px;
+    margin-top: 100px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: 200px;
+    gap: 230px;
 
     & section ul{
         list-style: none;
