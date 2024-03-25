@@ -31,6 +31,18 @@
 }
 
 
+@media screen and (max-width: 800px) {
+    #mainNameContent {
+        top: -2%;
+    }
+
+    /* #changeFontSizeLastName {
+        transform: translate(22vw, -30px);
+    } */
+}
+
+
+
 
 
 .menuHiddenButton {

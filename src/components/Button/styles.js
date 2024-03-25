@@ -26,6 +26,7 @@ export const ButtonContainer = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    white-space: nowrap;
 
     &.view_more{
         overflow: hidden;

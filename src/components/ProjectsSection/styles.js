@@ -1,15 +1,47 @@
 import styled from "styled-components";
 
+export const SectionName = styled.div`
+
+    transform: translate(30px, 90px);
+    margin-top: 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 70px;
+
+    position: sticky;
+    top: 15%;
+
+
+    & h1 {
+        color: #b7b7b7;
+        font-size: 5rem;
+        font-family: BebasNeue, Arial;
+        letter-spacing: .7rem;
+    }
+
+    & span {
+        background-color: #b7b7b7;
+        width: 400px;
+        padding: 1px;
+        border-radius: 5px;
+
+        margin-top: -70px;
+    }
+`
+
 export const OuterContainer = styled.section`
     width: 500%;
     height: 100vh;
-    // background-color: cyan;
+    // margin-top: 30px;
     overscroll-behavior: none;
+    position: relative;
 
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-
 `
 
 export const ContentContainer = styled.div`

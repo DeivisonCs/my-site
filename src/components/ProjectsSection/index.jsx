@@ -1,5 +1,5 @@
 import {React, useLayoutEffect} from "react";
-import { OuterContainer, ContentContainer } from "./styles";
+import { OuterContainer, ContentContainer, SectionName } from "./styles";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -43,10 +43,37 @@ const Projects = () => {
     })
 
     return (
-    <>
+        <>
+        <SectionName>
+            <h1>Projects</h1>
+            <span></span>
+        </SectionName>
+
         <OuterContainer className="projectsSection" id="projectViewControler">
 
+
             <ContentContainer className="projectContainer">
+                <a className="projectImage" href="https://deivisoncs.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">
+                    <img src={MyGallery} alt="Project" />
+                </a>
+
+                <h2>My Gallery</h2>
+
+                <div className="tecnologiesUsed">
+                    <span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt=""/>
+                    </span>
+                </div>
+
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error minus asperiores dolores tempore labore eius voluptatem exercitationem alias quam laborum. Dolorum est repudiandae itaque aut placeat fugiat vero quo velit?</p>
+
+                <img src={arrow_forward} alt="Arrow Forward" className="forward_arrow direction_arrow"/>
+            </ContentContainer>
+
+            <ContentContainer className="projectContainer">
+                <img src={arrow_back} alt="Arrow Back" className="back_arrow direction_arrow"/>
+
                 <a className="projectImage" href="https://calculator-react-rosy-alpha.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <img src={calculatorProject} alt="Project" />
                 </a>
@@ -118,27 +145,6 @@ const Projects = () => {
 
                 <img src={arrow_forward} alt="Arrow Forward" className="forward_arrow direction_arrow"/>
             </ContentContainer>
-            
-            <ContentContainer className="projectContainer">
-                <img src={arrow_back} alt="Arrow Back" className="back_arrow direction_arrow"/>
-
-                <a className="projectImage" href="https://deivisoncs.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">
-                    <img src={MyGallery} alt="Project" />
-                </a>
-
-                <h2>My Gallery</h2>
-
-                <div className="tecnologiesUsed">
-                    <span>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt=""/>
-                    </span>
-                </div>
-
-
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error minus asperiores dolores tempore labore eius voluptatem exercitationem alias quam laborum. Dolorum est repudiandae itaque aut placeat fugiat vero quo velit?</p>
-
-                <img src={arrow_forward} alt="Arrow Forward" className="forward_arrow direction_arrow"/>
-            </ContentContainer>
 
             <ContentContainer className="projectContainer">
                 <img src={arrow_back} alt="Arrow Back" className="back_arrow direction_arrow"/>
@@ -160,7 +166,7 @@ const Projects = () => {
             </ContentContainer>
             
         </OuterContainer>
-    </>
+        </>
     )
 };
 

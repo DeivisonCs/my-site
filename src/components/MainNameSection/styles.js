@@ -29,7 +29,6 @@ export const NameDiv = styled.div`
     height: 50vh;
     min-height: 480px;
     color: #fff;
-    // background-color: blue;
 
     display: flex;
     justify-content: center;
@@ -40,13 +39,11 @@ export const NameDiv = styled.div`
     & .mainNameDiv {
         position: relative;
         top: -10%;
-        // background-color: cyan;
     }
 
     & .subTextDiv {
         position: absolute;
         bottom: 10%;
-        // background-color: red;
 
         display: flex;
         flex-direction: column;
@@ -58,18 +55,15 @@ export const FirstName = styled.h1`
     font-family: CinzelDecorative, arial, sans-serif;
     font-size: 8vw;
     text-shadow: -4px 5px 2px #000;
-
-    margin-bottom: -40px;
-    opacity: 0;
 `
 
 export const LastName = styled.h1`
     font-family: CinzelDecorative, arial, sans-serif;
     font-size: 7vw;
     text-shadow: -4px 5px 2px #000;
-    transform: translate(150px, 5px);
-    margin-bottom: 20px;
 
+    transform: translate(22vw, -3vw);
+    margin-bottom: 20px;
 `
 
 export const WhatIam = styled.p`

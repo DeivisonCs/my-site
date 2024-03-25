@@ -18,8 +18,8 @@ const AboutMeSection = ({title, text}) => {
                     trigger: ".AboutMeContent",
                     scrub: true,
                     // markers: true,
-                    start: "top 900px",
-                    end: "top 600px"
+                    start: "top 80%",
+                    end: "top 50%"
                 }
             })
             .fromTo("#about-me-title", {
