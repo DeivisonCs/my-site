@@ -57,26 +57,6 @@ export const NavHiddenMenu = styled.div`
     display: none;
     position: relative;
 
-    // &:hover {
-    //     animation: activatedMenuBottom .3s ease-in-out .1s forwards;
-    // }
-    // &:hover .hiddenMenu {
-    //     animation: activatedMenu .4s ease-in-out .2s forwards;
-    // }
-
-
-    // @keyframes activatedMenuBottom {
-    //     to {
-    //         width: 100px;
-    //     }
-    // }
-
-    // @keyframes activatedMenu {
-    //     to {
-    //         height: 184px;
-    //         opacity: 1;
-    //     }
-    // }
 
     // -------------- Menu Bars -----------------
     & .menuBars {
@@ -96,30 +76,6 @@ export const NavHiddenMenu = styled.div`
         width: 100%;
         height: 5px;
     }
-
-    & .menuBars:hover #menuBar1 {
-        animation: barRight_Animation .3s ease-in-out .1s forwards;
-    }
-    & .menuBars:hover #menuBar2 {
-        animation: barLeft_Animation .3s ease-in-out .2s forwards;
-    }
-    & .menuBars:hover #menuBar3 {
-        animation: barRight_Animation .3s ease-in-out .3s forwards;
-    }
-
-    @keyframes barRight_Animation {
-        to {
-            transform: translateX( -10px);
-            width: 50%;
-        }
-    }
-    @keyframes barLeft_Animation {
-        to {
-            transform: translateX( 10px);
-            width: 50%;
-        }
-    }
-
 
     // -------------- Hidden Menu ----------------
 

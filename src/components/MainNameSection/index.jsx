@@ -52,7 +52,8 @@ const MyNameSection = ({name_1, name_2, office, buttonText}) => {
 
                 <div className="subTextDiv" id="mainContentSubText">
                     <WhatIam className="fadeInAnimation">{office}</WhatIam>
-                    <Button 
+                    <Button
+                        linkedTo="aboutMe" 
                         typeEdit="view_more fadeInAnimation"
                         text={buttonText}
                         />

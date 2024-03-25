@@ -30,13 +30,15 @@
     }
 }
 
+
+
+
 .menuHiddenButton {
     animation: activatedMenuBottom .3s ease-in-out .1s forwards;
 }
 .navButtonsMenuHidden {
     animation: activatedMenu .4s ease-in-out .2s forwards;
 }
-
 
 @keyframes activatedMenuBottom {
     to {
@@ -48,5 +50,28 @@
     to {
         height: 184px;
         opacity: 1;
+    }
+}
+
+.menuHiddenButton .menuBars #menuBar1 {
+    animation: barRight_Animation .3s ease-in-out .1s forwards;
+}
+.menuHiddenButton .menuBars #menuBar2 {
+    animation: barLeft_Animation .3s ease-in-out .2s forwards;
+}
+.menuHiddenButton .menuBars #menuBar3 {
+    animation: barRight_Animation .3s ease-in-out .3s forwards;
+}
+
+@keyframes barRight_Animation {
+    to {
+        transform: translateX( -10px);
+        width: 50%;
+    }
+}
+@keyframes barLeft_Animation {
+    to {
+        transform: translateX( 10px);
+        width: 50%;
     }
 }
