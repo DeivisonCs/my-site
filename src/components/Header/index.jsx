@@ -1,6 +1,7 @@
-import React from "react";
+import { React, useLayoutEffect } from "react";
 import { HeaderContainer, ButtonsContainer, NameContainer, NavHiddenMenu } from "./styles";
 import { Button } from "../Button" 
+import gsap from 'gsap';
 
 const Header = () => {
 
@@ -18,9 +19,19 @@ const Header = () => {
         }
     }
 
+    useLayoutEffect(() => {
+        gsap.fromTo('.mainHeaderSection', {
+            y: '-100px'
+        }, {
+            y: '0px',
+            duration: 2,
+            delay: 3.4
+        })
+    })
+
 
     return (
-        <HeaderContainer>
+        <HeaderContainer className="mainHeaderSection">
             <NameContainer className="myLogoHeader">
                 <span className="firstNameHeader">Deivison</span>
                 <span className="lastNameHeader">Santos</span>

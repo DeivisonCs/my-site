@@ -12,21 +12,21 @@ const MyNameSection = ({name_1, name_2, office, buttonText}) => {
     
         gsap.fromTo('.firstName', {
             opacity: 0,
-            y: '-50px',
+            y: '-150px',
         }, {
             opacity: 1,
             y: 0,
-            duration: 2.8,
-            delay: 2
+            duration: 3.6,
+            delay: 2.7
         })
 
         gsap.fromTo('.lastName', {
             opacity: 0,
-            x: 300,
+            x: 400,
         }, {
             opacity: 1,
             x: 150,
-            duration: 1.5,
+            duration: 2.1,
             delay: 1.3
         })
 
