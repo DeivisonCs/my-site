@@ -48,7 +48,7 @@ function App() {
         return () => {
             gsap.killTweensOf(".firstName, .lastName, .mainNameDiv");
         }
-    }, []);
+    }, []); 
 
     return (
     <>

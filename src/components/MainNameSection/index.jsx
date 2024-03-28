@@ -41,7 +41,7 @@ const MyNameSection = ({name_1, name_2, office, buttonText}) => {
         //     duration: 2,
         //     delay: 4.8
         // })
-    })
+    }, [])
 
     return(
         <NameSection>
