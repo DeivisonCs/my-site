@@ -19,7 +19,7 @@ const AboutMeSection = ({title, text}) => {
                     scrub: true,
                     // markers: true,
                     start: "top 80%",
-                    end: "top 50%"
+                    end: "top 55%"
                 }
             })
             .fromTo("#about-me-title", {

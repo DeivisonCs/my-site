@@ -21,7 +21,8 @@ export const AboutMeDiv = styled.section`
     }
 
     & span {
-        background-color: #b7b7b7;
+        // background-color: #b7b7b7;
+        background-image: linear-gradient(to left, #ffffff00, #b7b7b7, #ffffff00);
         width: 400px;
         padding: 1px;
         border-radius: 5px;
@@ -31,6 +32,8 @@ export const AboutMeDiv = styled.section`
 
     & p {
         color: #fff;
+        max-width: 700px;
+        line-height: 1.3em;
 
         font-size: 1.2rem;
         text-align: center;
