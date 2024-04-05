@@ -31,8 +31,7 @@ const MyNameSection = ({name_1, name_2, office, buttonText}) => {
         })
         
         gsap.fromTo('.nameSection', {
-            opacity: 0,
-            bgColor: "transparent"
+            opacity: 0
         }, {
             opacity: 1,
             duration: 10,
