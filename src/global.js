@@ -9,10 +9,12 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     body {
-        background-color: #1E1E1E;
+        // background-color: #1E1E1E;
         height: 100vh;
         overflow-X: hidden;
 
-        // overscroll-behavior: smooth;
+        background: var(--bg-pattern);
+        background-color: #131313;
+        background-size: 20px 20px;
     }
 `
