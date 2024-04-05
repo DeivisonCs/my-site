@@ -9,15 +9,15 @@ const MyNameSection = ({name_1, name_2, office, buttonText}) => {
 
 
     useLayoutEffect(() => {
-    
+
         gsap.fromTo('.firstName', {
             opacity: 0,
             y: '-150px',
         }, {
             opacity: 1,
             y: 0,
-            duration: 3.6,
-            delay: 2.7
+            duration: 2.6,
+            delay: 2
         })
 
         gsap.fromTo('.lastName', {
@@ -27,8 +27,15 @@ const MyNameSection = ({name_1, name_2, office, buttonText}) => {
             opacity: 1,
             x: '22vw',
             y: '-3vw',
-            duration: 2.9,
-            delay: 1.3
+            duration: 1.9,
+        })
+        
+        gsap.fromTo('.nameSection', {
+            opacity: 0,
+            bgColor: "transparent"
+        }, {
+            opacity: 1,
+            duration: 10,
         })
 
 
@@ -44,7 +51,7 @@ const MyNameSection = ({name_1, name_2, office, buttonText}) => {
     }, [])
 
     return(
-        <NameSection>
+        <NameSection className="nameSection">
             <NameDiv className="nameMainSection">
                 <div className="mainNameDiv" id="mainNameContent">
                     <FirstName className="firstName" id="changeFontSizeFirstName">{name_1}</FirstName>

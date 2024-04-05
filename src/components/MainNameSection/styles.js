@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const NameSection = styled.section`
-    background-image: radial-gradient(circle at 100% -80px, #757575, #434343, #1E1E1E 50%);
+    background-image: radial-gradient(circle at 100% -80px, #ffffffa1, #cbcbcb4a, #bfbfbf00 50%);
+    background-color: transparent;
+
     height: 100vh;
 
     display: flex;
@@ -55,12 +57,14 @@ export const FirstName = styled.h1`
     font-family: CinzelDecorative, arial, sans-serif;
     font-size: 8vw;
     text-shadow: -4px 5px 2px #000;
+    color: #fff;
 `
 
 export const LastName = styled.h1`
     font-family: CinzelDecorative, arial, sans-serif;
     font-size: 7vw;
     text-shadow: -4px 5px 2px #000;
+    color: #fff;
 
     transform: translate(22vw, -3vw);
     margin-bottom: 20px;
