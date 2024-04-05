@@ -24,7 +24,7 @@ const DetailsSection = () => {
                     scrub: true,
                     // markers: true,
                     start: "top 70%",
-                    end: "top 30%"
+                    end: "top 40%"
                 }
             })
             .fromTo("#skill-title", {
