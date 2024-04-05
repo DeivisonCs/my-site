@@ -68,7 +68,12 @@ export const ButtonContainer = styled.div`
         content: '';
 
         position: absolute;
-        background-color: #1E1E1E;
+        
+        // background-color: #1E1E1E;
+        background: var(--bg-pattern);
+        background-color: #131313;
+        background-size: 20px 20px;
+
         border-radius: 10px;
         height: 90%;
         width: 95%;
