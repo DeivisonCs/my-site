@@ -1,4 +1,4 @@
-import {React, useLayoutEffect} from "react";
+import {React, useLayoutEffect, useRef} from "react";
 import { OuterContainer, ContentContainer, SectionName } from "./styles";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -11,10 +11,72 @@ import Pokedex from "../../imgs/PokedexProject.png";
 
 
 const Projects = () => {
+
+    const projectTitleSectionRef = useRef();
+    const projectsTitleTimeline = useRef();
+
+    const projectSectionRef = useRef();
+    const projectsTimeline = useRef();
+
     
     useLayoutEffect(() => {
+        const projectsCard = document.querySelectorAll(".projectContainer");
 
         gsap.registerPlugin(ScrollTrigger);
+
+        gsap.context(() => {
+            projectsTitleTimeline.current = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".projectTitleContent",
+                    scrub: true,
+                    // markers: true,
+                    start: "top 70%",
+                    end: "top 30%"
+                }
+            })
+            .fromTo(".projects-title", {
+                opacity: 0,
+                x: "-200px"
+            }, {
+                opacity: 1,
+                x: 0
+            })
+            .fromTo(".projects-underscore", {
+                opacity: 0,
+                x: "-200px"
+            }, {
+                opacity: 1,
+                x: 0
+            })
+ 
+        }, projectTitleSectionRef);
+
+
+        gsap.context(() => {
+            projectsTimeline.current = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".projectContainer",
+                    scrub: true,
+                    // markers: true,
+                    start: "top 70%",
+                    end: "top 0%"
+                }
+            })
+
+            projectsCard.forEach(x => {
+                projectsTimeline.current.fromTo(x, {
+                    opacity: 0,
+                    y: 100
+                }, {
+                    opacity: 1,
+                    y: 0,
+
+                })
+            });  
+
+        }, projectSectionRef);
+
+
 
         // // --------------- Horizontal Scroll -----------------------
         // let projects = gsap.utils.toArray(".projectContainer");
@@ -41,12 +103,12 @@ const Projects = () => {
 
     return (
         <>
-        <SectionName id="projectViewControler">
-            <h1>Projects</h1>
-            <span></span>
+        <SectionName id="projectViewControler" ref={projectTitleSectionRef}>
+            <h1 className="projectTitleContent projects-title">Projects</h1>
+            <span className="projectTitleContent projects-underscore"></span>
         </SectionName>
 
-        <OuterContainer className="projectsSection">
+        <OuterContainer className="projectsSection" ref={projectSectionRef}>
 
             <ContentContainer className="projectContainer">
 
