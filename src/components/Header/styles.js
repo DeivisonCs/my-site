@@ -8,6 +8,7 @@ export const HeaderContainer = styled.div `
 
     z-index: 1;
     position: fixed;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,6 +47,38 @@ export const NameContainer = styled.div`
 
     & .lastNameHeader {
         transform: translate(25px, -5px);
+    }
+`
+
+export const ContactsContainer = styled.div`
+    // background-color: cyan;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+    gap: 30px;
+    
+    & a img {
+        width: 30px;
+    }
+
+    & a:hover {
+        filter: drop-shadow(0px 0px 5px #ffffff9c);
+        animation: pulsingAnimation 2s infinite;
+    }
+
+    @keyframes pulsingAnimation {
+        0%{
+            scale: 1;
+        }
+        50%{
+            scale: 1.2;
+        }
+        100%{
+            scale: 1;
+        }
     }
 `
 

@@ -1,7 +1,12 @@
 import { React, useLayoutEffect } from "react";
-import { HeaderContainer, ButtonsContainer, NameContainer, NavHiddenMenu } from "./styles";
+import { HeaderContainer, ButtonsContainer, NameContainer, NavHiddenMenu, ContactsContainer } from "./styles";
 import { Button } from "../Button" 
 import gsap from 'gsap';
+
+import email_icon    from "../../imgs/email_icon.svg";
+import gitHub_icon   from "../../imgs/github_icon.svg";
+import linkedin_icon from "../../imgs/linkedin_icon.svg";
+import whatsapp_icon from "../../imgs/whatsapp_icon.svg";
 
 const Header = () => {
 
@@ -32,7 +37,7 @@ const Header = () => {
 
     return (
         <HeaderContainer className="mainHeaderSection">
-            <NameContainer className="myLogoHeader">
+            <NameContainer className="myLogoHeader" id="nameHeader">
                 <span className="firstNameHeader">Deivison</span>
                 <span className="lastNameHeader">Santos</span>
             </NameContainer>
@@ -45,6 +50,24 @@ const Header = () => {
                 <Button linkedTo="projectViewControler" text="Projects"/>
                 <Button linkedTo="aboutMe" text="Contac Me"/>
             </ButtonsContainer>
+
+            <ContactsContainer id="contactLinksHeader">
+                <a href="mailto:deivisonddj3@gmail.com" target="_blank" rel="noreferrer noopener">
+                    <img src={email_icon}    alt="Email Logo" />
+                </a>
+                
+                <a href="https://www.linkedin.com/in/deivison-cassimiro-3ab207238/" target="_blank" rel="noreferrer noopener">
+                    <img src={linkedin_icon} alt="LinkedIn Logo" />
+                </a>
+
+                <a href="https://github.com/DeivisonCs" target="_blank" rel="noreferrer noopener" >
+                    <img src={gitHub_icon}   alt="GitHub Logo" />
+                </a>
+
+                <a href="whatsapp://send?phone=71991677474" target="_blank" rel="noreferrer noopener">
+                    <img src={whatsapp_icon} alt="WhatsApp Logo" />
+                </a>
+            </ContactsContainer>
 
             <NavHiddenMenu id="ocultMenu" onClick={() => activeMenu()}>
                 <div className="menuBars">
