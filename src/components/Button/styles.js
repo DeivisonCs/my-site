@@ -16,7 +16,7 @@ export const ButtonText  = styled.button`
     &:hover {
         box-shadow: 0px 0px 5px #000 inset;
         border-color: transparent;
-        color: #1E1E1E;
+        color: #fff;
     }
 
 `
