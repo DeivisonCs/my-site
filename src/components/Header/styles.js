@@ -34,6 +34,7 @@ export const NameContainer = styled.div`
     justify-content: center;
     align-items: center;
     opacity: 0;
+    cursor: pointer;
 
     display: flex;
     flex-direction: column;
@@ -47,6 +48,15 @@ export const NameContainer = styled.div`
 
     & .lastNameHeader {
         transform: translate(25px, -5px);
+    }
+
+    & button {
+        color: #fff;
+        font-family: CinzelDecorative, arial, sans-serif;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        border: none;
+        background-color: transparent;
     }
 `
 

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const SectionName = styled.div`
     margin-top: 200px;
     margin-left: 20px;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;
@@ -29,8 +30,8 @@ export const SectionName = styled.div`
 
 export const OuterContainer = styled.section`
     width: 100%;
-    height: 100vh;
     margin-top: 150px;
+    margin-bottom: 150px;
     overscroll-behavior: none;
     position: relative;
 
@@ -44,7 +45,7 @@ export const OuterContainer = styled.section`
 export const ContentContainer = styled.div`
     color: #fff;
 
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 
     display: flex;
     flex-direction: column;
@@ -71,6 +72,7 @@ export const ContentContainer = styled.div`
     & p{
         text-align: justify;
         max-width: 500px;
+        padding: 0px 20px;
     }
 
 

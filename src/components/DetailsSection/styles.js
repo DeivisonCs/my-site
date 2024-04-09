@@ -4,6 +4,7 @@ export const DetailsContainer = styled.div`
     height: fit-content;
     padding: 30px;
     margin-top: 100px;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;

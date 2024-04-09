@@ -65,12 +65,9 @@ const Projects = () => {
 
             projectsCard.forEach(x => {
                 projectsTimeline.current.fromTo(x, {
-                    opacity: 0,
-                    y: 100
+                    opacity: 0     
                 }, {
-                    opacity: 1,
-                    y: 0,
-
+                    opacity: 1
                 })
             });  
 

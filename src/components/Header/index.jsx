@@ -24,6 +24,14 @@ const Header = () => {
         }
     }
 
+    const scrollTo = (sectionId) => {
+        let section = document.getElementById(sectionId);
+
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
     useLayoutEffect(() => {
         gsap.fromTo('.mainHeaderSection', {
             y: '-100px'
@@ -37,9 +45,9 @@ const Header = () => {
 
     return (
         <HeaderContainer className="mainHeaderSection">
-            <NameContainer className="myLogoHeader" id="nameHeader">
-                <span className="firstNameHeader">Deivison</span>
-                <span className="lastNameHeader">Santos</span>
+            <NameContainer className="myLogoHeader" id="nameHeader" onClick={() => scrollTo("homeSection")}>
+                    <span className="firstNameHeader">Deivison</span>
+                    <span className="lastNameHeader">Santos</span>     
             </NameContainer>
 
 

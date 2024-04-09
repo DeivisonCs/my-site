@@ -4,6 +4,7 @@ export const AboutMeDiv = styled.section`
     height: 50vh;
     // background-color: cyan;
     padding: 15%;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;

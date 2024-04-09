@@ -50,7 +50,7 @@ const MyNameSection = ({name_1, name_2, office, buttonText}) => {
     }, [])
 
     return(
-        <NameSection className="nameSection">
+        <NameSection className="nameSection" id="homeSection">
             <NameDiv className="nameMainSection">
                 <div className="mainNameDiv" id="mainNameContent">
                     <FirstName className="firstName" id="changeFontSizeFirstName">{name_1}</FirstName>
