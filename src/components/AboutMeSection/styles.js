@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const AboutMeDiv = styled.section`
-    height: 50vh;
-    // background-color: cyan;
+    min-height: 50vh;
+    height: auto;
     padding: 15%;
     overflow: hidden;
 
@@ -22,7 +22,6 @@ export const AboutMeDiv = styled.section`
     }
 
     & span {
-        // background-color: #b7b7b7;
         background-image: linear-gradient(to left, #ffffff00, #b7b7b7, #ffffff00);
         width: 400px;
         padding: 1px;
@@ -37,6 +36,7 @@ export const AboutMeDiv = styled.section`
         line-height: 1.3em;
 
         font-size: 1.2rem;
+        letter-spacing: 2px;
         text-align: center;
     }
 `

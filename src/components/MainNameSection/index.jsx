@@ -38,15 +38,6 @@ const MyNameSection = ({name_1, name_2, office, buttonText}) => {
         })
 
 
-        // gsap.fromTo('.subTextDiv', {
-        //     opacity: 0,
-        //     y: 40
-        // }, {
-        //     opacity: 1,
-        //     y: 0,
-        //     duration: 2,
-        //     delay: 4.8
-        // })
     }, [])
 
     return(
@@ -58,7 +49,7 @@ const MyNameSection = ({name_1, name_2, office, buttonText}) => {
                 </div>
 
                 <div className="subTextDiv" id="mainContentSubText">
-                    <WhatIam className="fadeInAnimation">{office}</WhatIam>
+                    <WhatIam className="fadeInAnimation subText">{office}</WhatIam>
                     <Button
                         linkedTo="aboutMe" 
                         typeEdit="view_more fadeInAnimation"

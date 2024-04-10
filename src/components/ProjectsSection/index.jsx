@@ -3,11 +3,11 @@ import { OuterContainer, ContentContainer, SectionName } from "./styles";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import calculatorProject from "../../imgs/calculatorProject.png";
-import appleProject from "../../imgs/landingPageProject.png";
-import inputValidation from "../../imgs/inputValidationProject.png";
-import MyGallery from "../../imgs/GalleryProject.png";
-import Pokedex from "../../imgs/PokedexProject.png";
+import calculatorProject from "../../imgs/projects_imgs/calculatorProject.png";
+import appleProject from "../../imgs/projects_imgs/landingPageProject.png";
+import inputValidation from "../../imgs/projects_imgs/inputValidationProject.png";
+import MyGallery from "../../imgs/projects_imgs/GalleryProject.png";
+import Pokedex from "../../imgs/projects_imgs/PokedexProject.png";
 
 
 const Projects = () => {

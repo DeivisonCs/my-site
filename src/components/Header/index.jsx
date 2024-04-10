@@ -3,10 +3,10 @@ import { HeaderContainer, ButtonsContainer, NameContainer, NavHiddenMenu, Contac
 import { Button } from "../Button" 
 import gsap from 'gsap';
 
-import email_icon    from "../../imgs/email_icon.svg";
-import gitHub_icon   from "../../imgs/github_icon.svg";
-import linkedin_icon from "../../imgs/linkedin_icon.svg";
-import whatsapp_icon from "../../imgs/whatsapp_icon.svg";
+import email_icon    from "../../imgs/header_icons/email_icon.svg";
+import gitHub_icon   from "../../imgs/header_icons/github_icon.svg";
+import linkedin_icon from "../../imgs/header_icons/linkedin_icon.svg";
+import whatsapp_icon from "../../imgs/header_icons/whatsapp_icon.svg";
 
 const Header = () => {
 
