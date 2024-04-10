@@ -3,6 +3,13 @@ import { DetailsContainer, SkillsContainer, EducationContainer } from "./styles"
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import jsIcon from "./../../imgs/languages_icons/js_icon.jpeg";
+import reactIcon from "./../../imgs/languages_icons/react_icon.png";
+import cssIcon from "./../../imgs/languages_icons/css_icon.png";
+import htmlIcon from "./../../imgs/languages_icons/html_icon.png";
+import pythonIcon from "./../../imgs/languages_icons/python_icon.png";
+import cIcon from "./../../imgs/languages_icons/c_icon.png";
+
 const DetailsSection = () => {
 
     const skillSection_Ref = useRef();
@@ -101,13 +108,33 @@ const DetailsSection = () => {
 
                 <ul className="skillContent" id="skill-list">
                     <li>
-                        <img className="languageIcon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
+                        <img className="languageIcon" src={jsIcon} alt="" />
                         <span>JavaScript</span>
                     </li>
 
                     <li>
-                        <img className="languageIcon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
-                        <span>JavaScript</span>
+                        <img className="languageIcon" src={htmlIcon} alt="" />
+                        <span>Html</span>
+                    </li>
+
+                    <li>
+                        <img className="languageIcon" src={cssIcon} alt="" />
+                        <span>Css</span>
+                    </li>
+
+                    <li>
+                        <img className="languageIcon" src={pythonIcon} alt="" />
+                        <span>Python</span>
+                    </li>
+
+                    <li>
+                        <img className="languageIcon" src={reactIcon} alt="" />
+                        <span>React</span>
+                    </li>
+
+                    <li>
+                        <img className="languageIcon" src={cIcon} alt="" />
+                        <span>C</span>
                     </li>
                 </ul>
             </SkillsContainer>
@@ -118,22 +145,8 @@ const DetailsSection = () => {
 
                 <ul className="education-content" id="education-list">
                     <li>
-                        {/* Nome da Formação */}
                         <span>Análise e Desenvolvimento de Sistemas</span>
-                        {/* Periodo/Tempo da Formação */}
-                        <span>3/2022 - atual</span>
-                    </li>
-                    <li>
-                        {/* Nome da Formação */}
-                        <span>Análise e Desenvolvimento de Sistemas</span>
-                        {/* Periodo/Tempo da Formação */}
-                        <span>3/2022 - atual</span>
-                    </li>
-                    <li>
-                        {/* Nome da Formação */}
-                        <span>Análise e Desenvolvimento de Sistemas</span>
-                        {/* Periodo/Tempo da Formação */}
-                        <span>3/2022 - atual</span>
+                        <span>03/2022 - atual</span>
                     </li>
                 </ul>
             </EducationContainer>

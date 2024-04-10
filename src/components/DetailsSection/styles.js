@@ -34,9 +34,6 @@ export const SkillsContainer = styled.section`
     justify-content: center;
     gap: 50px;
     
-    & ul{
-        list-style: none;
-    }
 
     & h2 {
         color: #b7b7b7;
@@ -55,13 +52,15 @@ export const SkillsContainer = styled.section`
 
     & ul {
         max-height: 300px;
+        width: 100%;
         color: #fff;
         font-size: 1.2rem;
+        list-style: none;
 
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         gap: 40px;
     }
@@ -79,9 +78,6 @@ export const SkillsContainer = styled.section`
         border-radius: 5px;
     }
 
-    // & ul li img:hover {
-    //     animation: rotateIcon .2s linear .2s forwards;
-    // }
     & ul li:hover > .languageIcon {
         animation: rotateIcon .2s linear .2s forwards;
     }
