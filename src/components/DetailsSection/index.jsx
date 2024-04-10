@@ -101,15 +101,12 @@ const DetailsSection = () => {
 
                 <ul className="skillContent" id="skill-list">
                     <li>
-                        {/* logo da linguagem */}
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
-                        {/* nome da linguagem */}
+                        <img className="languageIcon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
                         <span>JavaScript</span>
                     </li>
+
                     <li>
-                        {/* logo da linguagem */}
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
-                        {/* nome da linguagem */}
+                        <img className="languageIcon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
                         <span>JavaScript</span>
                     </li>
                 </ul>

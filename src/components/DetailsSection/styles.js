@@ -78,6 +78,22 @@ export const SkillsContainer = styled.section`
         width: 30px;
         border-radius: 5px;
     }
+
+    // & ul li img:hover {
+    //     animation: rotateIcon .2s linear .2s forwards;
+    // }
+    & ul li:hover > .languageIcon {
+        animation: rotateIcon .2s linear .2s forwards;
+    }
+
+    @keyframes rotateIcon {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(35deg);
+        }
+    }
 `
 
 export const EducationContainer = styled.section`
