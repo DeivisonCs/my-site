@@ -31,7 +31,6 @@ export const SectionName = styled.div`
 export const OuterContainer = styled.section`
     width: 100%;
     margin-top: 150px;
-    margin-bottom: 150px;
     overscroll-behavior: none;
     position: relative;
 

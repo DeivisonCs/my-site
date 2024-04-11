@@ -90,11 +90,6 @@ const Header = () => {
                     <Button linkedTo="Education_Section" text="Education"/>
                     <Button linkedTo="projectViewControler" text="Projects"/>
                     <Button linkedTo="aboutMe" text="Contact Me"/>
-                    {/* <button onClick={() => scrollTo("aboutMe")}>About Me</button> */}
-                    {/* <button onClick={() => scrollTo("Skills_Section")}>Skills</button> */}
-                    {/* <button onClick={() => scrollTo("Education_Section")}>Education</button>
-                    <button onClick={() => scrollTo("projectViewControler")}>Projects</button>
-                    <button onClick={() => scrollTo("aboutMe")}>Contact Me</button> */}
                 </ButtonsContainer>
             </NavHiddenMenu>
         </HeaderContainer>

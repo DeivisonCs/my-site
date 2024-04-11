@@ -5,6 +5,7 @@ import {MyNameSection} from "../components/MainNameSection";
 import {AboutMeSection} from "../components/AboutMeSection";
 import {DetailsSection} from "../components/DetailsSection";
 import {Projects} from "../components/ProjectsSection";
+import {FooterSection} from "../components/FooterSection";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -60,7 +61,10 @@ function App() {
         />
 
         <DetailsSection/>
+        
         <Projects/>
+
+        <FooterSection/>
     </>
     );
 }
