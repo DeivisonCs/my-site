@@ -54,11 +54,9 @@ function App() {
     return (
     <>
         <Header name="D.C.Santos"/>
-        <MyNameSection name_1="Deivison" name_2="Santos" office="Web Developer" buttonText="View More"/>
+        <MyNameSection name_1="Deivison" name_2="Santos" office="Developer" buttonText="View More"/>
         
-        <AboutMeSection title="About Me"
-            text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit necessitatibus facere provident laboriosam tenetur consequatur distinctio earum aspernatur veritatis, eaque itaque dolorem aliquid cupiditate, cum esse sapiente optio ut quod?"
-        />
+        <AboutMeSection/>
 
         <DetailsSection/>
         

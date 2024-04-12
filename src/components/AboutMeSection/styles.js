@@ -21,6 +21,8 @@ export const AboutMeDiv = styled.section`
         letter-spacing: .7rem;
     }
 
+
+
     & span {
         background-image: linear-gradient(to left, #ffffff00, #b7b7b7, #ffffff00);
         width: 400px;
@@ -30,13 +32,22 @@ export const AboutMeDiv = styled.section`
         margin-top: -70px;
     }
 
-    & p {
-        color: #fff;
+    & div p {
+        font-family: 'Courier New', Courier, monospace;
+        color: #ffffffd6;
         max-width: 700px;
-        line-height: 1.3em;
+        line-height: 30px;
 
         font-size: 1.2rem;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
         text-align: center;
+        text-align: justify;
+        text-indent: 40px;
+    }
+
+    & div p mark {
+        background-color: transparent;
+        color: #fff;
+        filter: drop-shadow(1px 1px 1px #fff);
     }
 `
