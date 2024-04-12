@@ -49,15 +49,6 @@ export const NameContainer = styled.div`
     & .lastNameHeader {
         transform: translate(25px, -5px);
     }
-
-    & button {
-        color: #fff;
-        font-family: CinzelDecorative, arial, sans-serif;
-        font-size: 1.2rem;
-        letter-spacing: 2px;
-        border: none;
-        background-color: transparent;
-    }
 `
 
 export const ContactsContainer = styled.div`
