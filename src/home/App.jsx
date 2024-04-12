@@ -64,7 +64,12 @@ function App() {
         
         <Projects/>
 
-        <FooterSection/>
+        <FooterSection
+            number="(71) 9 9167-7474"
+            email="deivisonddj3@gmail.com"
+            github="DeivisonCs"
+            linkedin="Deivison Cassimiro"
+        />
     </>
     );
 }

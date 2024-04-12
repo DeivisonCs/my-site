@@ -27,6 +27,8 @@ export const ContacsContainer = styled.div`
         align-items: center;
         gap: 10px;
 
+        text-decoration: none;
+
         color: #fff;
         cursor: pointer;
     }
@@ -47,10 +49,6 @@ export const MyName = styled.div`
     display: flex;
     flex-direction: column;
 
-    &:hover {
-        filter: drop-shadow(2px 2px 3px #fff);
-    }
-
     & span {
         color: #fff;
         font-family: CinzelDecorative, arial, sans-serif;
@@ -66,7 +64,4 @@ export const MyName = styled.div`
         transform: translateX(40px);
     }
 
-    &:hover span:first-child, &:hover span:last-child {
-        transform: translateX(0);
-    }
 ` 

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div `
+    user-select: none;
+
     height: 80px;
     width: 100vw;
     padding: 30px;
@@ -25,8 +27,6 @@ export const ButtonsContainer = styled.div`
     justify-content: center;
     align-items: center;
     gap: 15px;
-
-    // display: none;
 `
 
 export const NameContainer = styled.div`
@@ -52,8 +52,6 @@ export const NameContainer = styled.div`
 `
 
 export const ContactsContainer = styled.div`
-    // background-color: cyan;
-
     display: flex;
     flex-direction: row;
     align-items: center;

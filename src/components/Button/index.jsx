@@ -1,15 +1,16 @@
 import React from "react";
 import {ButtonText, ButtonContainer} from "./styles";
 
+export const scrollTo = (sectionId) => {
+    let section = document.getElementById(sectionId);
+
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
 const Button = ({text, linkedTo, typeEdit}) => {
 
-    const scrollTo = (sectionId) => {
-        let section = document.getElementById(sectionId);
-
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
 
     return (
         <ButtonContainer className={typeEdit}>

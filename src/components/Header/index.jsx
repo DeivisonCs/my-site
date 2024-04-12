@@ -1,6 +1,7 @@
 import { React, useLayoutEffect } from "react";
 import { HeaderContainer, ButtonsContainer, NameContainer, NavHiddenMenu, ContactsContainer } from "./styles";
-import { Button } from "../Button" 
+import { Button } from "../Button" ;
+import {scrollTo} from "../../components/Button";
 import gsap from 'gsap';
 
 import email_icon    from "../../imgs/header_icons/email_icon.svg";
@@ -24,13 +25,6 @@ const Header = () => {
         }
     }
 
-    const scrollTo = (sectionId) => {
-        let section = document.getElementById(sectionId);
-
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
 
     useLayoutEffect(() => {
         gsap.fromTo('.mainHeaderSection', {
@@ -89,7 +83,7 @@ const Header = () => {
                     <Button linkedTo="Skills_Section" text="Skills"/>
                     <Button linkedTo="Education_Section" text="Education"/>
                     <Button linkedTo="projectViewControler" text="Projects"/>
-                    <Button linkedTo="aboutMe" text="Contact Me"/>
+                    <Button linkedTo="Contact_Section" text="Contact Me"/>
                 </ButtonsContainer>
             </NavHiddenMenu>
         </HeaderContainer>

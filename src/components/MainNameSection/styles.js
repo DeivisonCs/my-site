@@ -4,6 +4,7 @@ export const NameSection = styled.section`
     background-image: radial-gradient(circle at 100% -80px, #ffffffa1, #cbcbcb4a, #bfbfbf00 50%);
     background-color: transparent;
     overflow: hidden;
+    user-select: none;
 
     height: 100vh;
 

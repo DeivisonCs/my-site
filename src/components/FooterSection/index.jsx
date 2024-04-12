@@ -1,5 +1,6 @@
 import React from "react"; 
 import {FooterContainer, ContacsContainer, MyName} from "./styles";
+import {scrollTo} from "../../components/Button";
 
 import email_icon    from "../../imgs/header_icons/email_icon.svg";
 import gitHub_icon   from "../../imgs/header_icons/github_icon.svg";
@@ -8,31 +9,31 @@ import whatsapp_icon from "../../imgs/header_icons/whatsapp_icon.svg";
 
 const FooterSection = ({email, linkedin, number, github}) => {
     return (
-        <FooterContainer>
+        <FooterContainer id="Contact_Section">
             <ContacsContainer>
-                <a>
+                <a href="whatsapp://send?phone=71991677474" target="_blank" rel="noreferrer noopener">
                     <img src={whatsapp_icon} alt="whatsApp icon" />
-                    <span>(71) 9 9167-7474</span>
+                    <span>{number}</span>
                 </a>
 
-                <a>
+                <a href="mailto:deivisonddj3@gmail.com" target="_blank" rel="noreferrer noopener">
                     <img src={email_icon} alt="email icon" />
-                    <span>deivisonddj3@gmail.com</span>
+                    <span>{email}</span>
                 </a>
 
-                <a>
+                <a href="https://github.com/DeivisonCs" target="_blank" rel="noreferrer noopener">
                     <img src={gitHub_icon} alt="github icon" />
-                    <span>DeivisonCs</span>
+                    <span>{github}</span>
                 </a>
 
-                <a>
+                <a href="https://www.linkedin.com/in/deivison-cassimiro-3ab207238/" target="_blank" rel="noreferrer noopener">
                     <img src={linkedin_icon} alt="linkedin icon" />
-                    <span>Deivison Cassimiro</span>
+                    <span>{linkedin}</span>
                 </a>
             </ContacsContainer>
 
-            <MyName>
-                <span className="">Deivison</span>
+            <MyName onClick={() => scrollTo("homeSection")}>
+                <span>Deivison</span>
                 <span>Santos</span>
             </MyName>
         </FooterContainer>
