@@ -50,7 +50,7 @@ const Header = () => {
                 <Button linkedTo="Skills_Section" text="Skills"/>
                 <Button linkedTo="Education_Section" text="Education"/>
                 <Button linkedTo="projectViewControler" text="Projects"/>
-                <Button linkedTo="aboutMe" text="Contac Me"/>
+                <Button linkedTo="Contact_Section" text="Contac Me"/>
             </ButtonsContainer>
 
             <ContactsContainer id="contactLinksHeader">
