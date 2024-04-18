@@ -14,7 +14,7 @@ const AboutMeSection = () => {
             scrollTrigger: {
                 trigger: aboutRef.current,
                 scrub: true,
-                markers:true,
+                // markers:true,
                 start: "top 50%",
                 end: "top 10%"
             }
