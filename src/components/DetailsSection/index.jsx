@@ -13,91 +13,78 @@ import cIcon from "./../../imgs/languages_icons/c_icon.png";
 const DetailsSection = () => {
 
     const skillSection_Ref = useRef();
-    const skillTimeline = useRef();
-    
     const educationSection_Ref = useRef();
-    const educationTimeline = useRef();
 
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
     // --------------------- Skills Section Animation ---------------------
-        gsap.context(() => {
-
-            skillTimeline.current = gsap.timeline({
-                scrollTrigger: {
-                    trigger: ".skillContent",
-                    scrub: true,
-                    // markers: true,
-                    start: "top 70%",
-                    end: "top 40%"
-                }
-            })
-            .fromTo("#skill-title", {
-                opacity: 0,
-                x: "-200px"
-            },{
-                opacity: 1,
-                x: 0
-            })    
-            .fromTo("#skill-underscore", {
-                opacity: 0,
-                x: "-200px"
-            },{
-                opacity: 1,
-                x: 0
-            })    
-            .fromTo("#skill-list", {
-                opacity: 0,
-                x: "-200px"
-            },{
-                opacity: 1,
-                x: 0
-            })    
-        }, skillSection_Ref)
+        const skillsTimeline = gsap.timeline({
+            scrollTrigger: {
+                trigger: skillSection_Ref.current,
+                scrub: true,
+                // markers: true,
+                start: "top 70%",
+                end: "top 40%"
+            }
+        });
+        titleSkillsAnimation(skillsTimeline);
 
 
     // --------------------- Education Section Animation ---------------------
-        gsap.context(() => {
 
-            educationTimeline.current = gsap.timeline({
-                scrollTrigger: {
-                    trigger: ".education-content",
-                    scrub: true,
-                    // markers: true,
-                    start: "top 70%",
-                    end: "top 45%"
-                }
-            })
-            .fromTo("#education-title", {
-                opacity: 0,
-                x: "200px"
-            },{
-                opacity: 1,
-                x: 0
-            })    
-            .fromTo("#education-underscore", {
-                opacity: 0,
-                x: "200px"
-            },{
-                opacity: 1,
-                x: 0
-            })    
-            .fromTo("#education-list", {
-                opacity: 0,
-                x: "200px"
-            },{
-                opacity: 1,
-                x: 0
-            })  
-        }, educationSection_Ref)
+        const educationTimeline = gsap.timeline({
+            scrollTrigger: {
+                trigger: educationSection_Ref.current,
+                scrub: true,
+                // markers: true,
+                start: "top 70%",
+                end: "top 45%"
+            }
+        });
+        titleEducationAnimation(educationTimeline);
 
         return(() => {
             gsap.killTweensOf(".skillContent .education-content");
         })
     })
 
+    const titleSkillsAnimation = (itens) => {
+        itens.fromTo("#skill-title, #skill-underscore", {
+            opacity: 0,
+            x: "-200px"
+        },{
+            opacity: 1,
+            x: 0
+        })       
+        .fromTo("#skill-list", {
+            opacity: 0,
+            x: "-200px"
+        },{
+            opacity: 1,
+            x: 0,
+            stagger: 0.2
+        })    
+    }
+
+    const titleEducationAnimation = (itens) => {
+        itens.fromTo("#education-title, #education-underscore", {
+            opacity: 0,
+            x: "200px"
+        },{
+            opacity: 1,
+            x: 0
+        })      
+        .fromTo("#education-list", {
+            opacity: 0,
+            x: "200px"
+        },{
+            opacity: 1,
+            x: 0,
+            stagger: 0.2
+        })  
+    }
 
 
     return (
