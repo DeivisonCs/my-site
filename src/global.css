@@ -54,6 +54,9 @@ body::-moz-scrollbar {
     }
     #about-me-text-div .about-me-text {
         font-size: 1.1rem;
+        text-align: center;
+        letter-spacing: 2px;
+        text-indent: 10px;
     }
 }
 

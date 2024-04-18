@@ -41,7 +41,6 @@ export const AboutMeDiv = styled.section`
 
         font-size: 1.2rem;
         letter-spacing: 3px;
-        text-align: center;
         text-align: justify;
         text-indent: 40px;
     }
