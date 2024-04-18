@@ -59,7 +59,7 @@ export const ContentContainer = styled.div`
         margin-bottom: -20px;
     }
     & .projectImage img:hover {
-        box-shadow: 0px 0px 5px #333;
+        box-shadow: 0px 0px 50px #333;
         scale: 1.01;
         cursor: pointer;
     }
