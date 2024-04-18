@@ -35,7 +35,7 @@ const AboutMeSection = () => {
             opacity: 1,
             y: 0,
             stagger: 0.2
-        }).fromTo("#about-me-text", {
+        }).fromTo("#about-me-text-div", {
             opacity: 0,
             x: 200
         }, {
@@ -57,8 +57,8 @@ const AboutMeSection = () => {
             <h2 className="AboutMeContent" id="about-me-title">About Me</h2>
             <span className="AboutMeContent" id="about-me-underline"></span>
 
-            <div className="AboutMeContent" id="about-me-text">
-            <p className="AboutMeContent about-me-text">
+            <div className="AboutMeContent" id="about-me-text-div">
+                <p className="AboutMeContent about-me-text">
                     Hi, I'm Deivison Cassimiro dos Santos. I'm always trying to learn something new and that's inspired me to study programming. I live in Brazil and I started my career at the college, beside that I always try to do some courses to improve my knowledge.
                 </p> 
                 <p className="AboutMeContent about-me-text">

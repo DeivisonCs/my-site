@@ -51,7 +51,7 @@ const Projects = () => {
     })
 
     const titleProjectsTimelineAnimation = (itens) => {
-        itens.fromTo(".projects-title, .projects-underscore", {
+        itens.fromTo("#projects-title, .projects-underscore", {
             opacity: 0,
             x: "-200px"
         }, {
@@ -77,7 +77,7 @@ const Projects = () => {
     return (
         <>
         <SectionName id="projectViewControler" ref={projectTitleSectionRef}>
-            <h1 className="projectTitleContent projects-title">Projects</h1>
+            <h1 className="projectTitleContent" id="projects-title">Projects</h1>
             <span className="projectTitleContent projects-underscore"></span>
         </SectionName>
 

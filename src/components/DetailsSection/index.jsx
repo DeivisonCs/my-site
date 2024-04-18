@@ -77,7 +77,7 @@ const DetailsSection = () => {
     return (
         <DetailsContainer>
             <SkillsContainer className="skillsContainer" id="Skills_Section" ref={skillSection_Ref}>
-                <h2 className="skillContent" id="skill-title">Skills</h2>
+                <h2 className="skillContent sectionTitle" id="skill-title">Skills</h2>
                 <span className="title_undercore skillContent" id="skill-underscore"></span>
 
                 <ul className="skillContent" id="skill-list">

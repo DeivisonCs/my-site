@@ -43,6 +43,7 @@ export const SkillsContainer = styled.section`
     & .title_undercore {
         background-image: linear-gradient(to left, #ffffff00, #b7b7b7);
         width: 300px;
+        max-width: 90vw;
         padding: 1px;
         border-radius: 5px;
 
@@ -113,6 +114,7 @@ export const EducationContainer = styled.section`
     & .title_undercore {
         background-image: linear-gradient(to right, #ffffff00, #b7b7b7);
         width: 400px;
+        max-width: 90vw;
         padding: 1px;
         border-radius: 5px;
 

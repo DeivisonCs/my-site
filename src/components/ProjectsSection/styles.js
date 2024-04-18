@@ -21,6 +21,7 @@ export const SectionName = styled.div`
     & span {
         background-image: linear-gradient(to left, #ffffff00, #b7b7b7);
         width: 400px;
+        max-width: 90vw;
         padding: 1px;
         border-radius: 5px;
 
@@ -57,6 +58,7 @@ export const ContentContainer = styled.div`
         height: 500px;
         border-radius: 20px;
         margin-bottom: -20px;
+        max-width: 90vw;
     }
     & .projectImage img:hover {
         box-shadow: 0px 0px 50px #333;

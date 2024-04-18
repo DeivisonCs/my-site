@@ -26,6 +26,7 @@ export const AboutMeDiv = styled.section`
     & span {
         background-image: linear-gradient(to left, #ffffff00, #b7b7b7, #ffffff00);
         width: 400px;
+        max-width: 90vw;
         padding: 1px;
         border-radius: 5px;
 

@@ -30,7 +30,7 @@ export const ButtonContainer = styled.div`
 
     &.view_more{
         overflow: hidden;
-        width: 40%;
+        width: 80%;
         opacity: 0;
     }
 

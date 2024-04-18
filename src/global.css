@@ -52,6 +52,9 @@ body::-moz-scrollbar {
     #mainNameContent {
         top: -2%;
     }
+    #about-me-text-div .about-me-text {
+        font-size: 1.1rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -60,6 +63,25 @@ body::-moz-scrollbar {
     }
     #contactLinksHeader {
         width: 20px;
+    }
+    #about-me-text-div .about-me-text {
+        font-size: 1rem;
+    }
+}
+
+/* Responsivo dos títulos, não consegui modularizar :( please help, I'm a beginner*/ 
+@media screen and (max-width: 500px) {
+    #about-me-title {
+        font-size: 2.4rem;
+    }
+    #education-title {
+        font-size: 2.8rem;
+    }
+    #education-list li {
+        font-size: 1rem;
+    }
+    #projects-title {
+        font-size: 3rem;
     }
 }
 
