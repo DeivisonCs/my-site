@@ -46,7 +46,8 @@ const DetailsSection = () => {
         titleEducationAnimation(educationTimeline);
 
         return(() => {
-            gsap.killTweensOf(".skillContent .education-content");
+            skillsTimeline.kill();
+            educationTimeline.kill();
         })
     })
 
@@ -56,7 +57,8 @@ const DetailsSection = () => {
             x: "-200px"
         },{
             opacity: 1,
-            x: 0
+            x: 0,
+            stagger: 0.4
         })       
         .fromTo("#skill-list", {
             opacity: 0,
@@ -74,7 +76,8 @@ const DetailsSection = () => {
             x: "200px"
         },{
             opacity: 1,
-            x: 0
+            x: 0,
+            stagger: 0.4
         })      
         .fromTo("#education-list", {
             opacity: 0,

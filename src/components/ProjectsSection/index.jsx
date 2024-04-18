@@ -13,90 +13,66 @@ import Pokedex from "../../imgs/projects_imgs/PokedexProject.png";
 const Projects = () => {
 
     const projectTitleSectionRef = useRef();
-    const projectsTitleTimeline = useRef();
-
     const projectSectionRef = useRef();
-    const projectsTimeline = useRef();
-
     
     useLayoutEffect(() => {
-        const projectsCard = document.querySelectorAll(".projectContainer");
 
         gsap.registerPlugin(ScrollTrigger);
 
-        gsap.context(() => {
-            projectsTitleTimeline.current = gsap.timeline({
-                scrollTrigger: {
-                    trigger: ".projectTitleContent",
-                    scrub: true,
-                    // markers: true,
-                    start: "top 70%",
-                    end: "top 30%"
-                }
-            })
-            .fromTo(".projects-title", {
-                opacity: 0,
-                x: "-200px"
-            }, {
-                opacity: 1,
-                x: 0
-            })
-            .fromTo(".projects-underscore", {
-                opacity: 0,
-                x: "-200px"
-            }, {
-                opacity: 1,
-                x: 0
-            })
- 
-        }, projectTitleSectionRef);
+        const titleTimeline = gsap.timeline({
+            scrollTrigger: {
+                trigger: projectTitleSectionRef.current,
+                scrub: true,
+                // markers: true,
+                start: "top 70%",
+                end: "top 30%"
+            }
+        });
+        titleProjectsTimelineAnimation(titleTimeline);
 
 
-        gsap.context(() => {
-            projectsTimeline.current = gsap.timeline({
-                scrollTrigger: {
-                    trigger: ".projectContainer",
-                    scrub: true,
-                    // markers: true,
-                    start: "top 70%",
-                    end: "top 0%"
-                }
-            })
-
-            projectsCard.forEach(x => {
-                projectsTimeline.current.fromTo(x, {
-                    opacity: 0     
-                }, {
-                    opacity: 1
-                })
-            });  
-
-        }, projectSectionRef);
+        const projectsTimeline = gsap.timeline({
+            scrollTrigger: {
+                trigger: projectSectionRef.current,
+                scrub: true,
+                // markers: true,
+                start: "top 70%",
+                end: "top 0%"
+            }
+        })
+        projectsTimelineAnimation(projectsTimeline);
 
 
 
-        // // --------------- Horizontal Scroll -----------------------
-        // let projects = gsap.utils.toArray(".projectContainer");
-        // gsap.to(projects, {
-        //     xPercent: -100 * (projects.length -1),
-        //     ease: "none",
-
-        //     scrollTrigger: {
-        //         trigger: ".projectsSection",
-        //         scrub: 1,
-        //         pin: true,
-        //         start: "top top",
-        //         // markers:true,
-        //         snap: 1 / (projects.length - 1),
-        //         // Define o fim do scroll lateral
-        //         end: "right 10%"
-        //     }
-        // });
-
-        // return(() => {
-        //     gsap.killTweensOf(projects);
-        // })
+        return(() => {
+            titleTimeline.kill();
+            projectsTimeline.kill();
+        })
     })
+
+    const titleProjectsTimelineAnimation = (itens) => {
+        itens.fromTo(".projects-title, .projects-underscore", {
+            opacity: 0,
+            x: "-200px"
+        }, {
+            opacity: 1,
+            x: 0,
+            stagger: 0.4
+        })
+    }
+
+    const projectsTimelineAnimation = (itens) => {
+        const projectsCard = document.querySelectorAll(".projectContainer");
+
+        projectsCard.forEach(x => {
+            itens.fromTo(x, {
+                opacity: 0     
+            }, {
+                opacity: 1,
+                stagger: 0.3
+            })
+        });  
+    }
 
     return (
         <>
