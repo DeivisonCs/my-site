@@ -52,26 +52,18 @@ const DetailsSection = () => {
     })
 
     const titleSkillsAnimation = (itens) => {
-        itens.fromTo("#skill-title, #skill-underscore", {
+        itens.fromTo("#skill-title, #skill-underscore, #skill-list", {
             opacity: 0,
             x: "-200px"
         },{
             opacity: 1,
             x: 0,
-            stagger: 0.4
-        })       
-        .fromTo("#skill-list", {
-            opacity: 0,
-            x: "-200px"
-        },{
-            opacity: 1,
-            x: 0,
-            stagger: 0.2
-        })    
+            stagger: 0.4,
+        })        
     }
 
     const titleEducationAnimation = (itens) => {
-        itens.fromTo("#education-title, #education-underscore", {
+        itens.fromTo("#education-title, #education-underscore, #education-list", {
             opacity: 0,
             x: "200px"
         },{
@@ -79,14 +71,6 @@ const DetailsSection = () => {
             x: 0,
             stagger: 0.4
         })      
-        .fromTo("#education-list", {
-            opacity: 0,
-            x: "200px"
-        },{
-            opacity: 1,
-            x: 0,
-            stagger: 0.2
-        })  
     }
 
 
