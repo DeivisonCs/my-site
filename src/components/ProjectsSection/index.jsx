@@ -9,6 +9,12 @@ import inputValidation from "../../imgs/projects_imgs/inputValidationProject.png
 import MyGallery from "../../imgs/projects_imgs/GalleryProject.png";
 import Pokedex from "../../imgs/projects_imgs/PokedexProject.png";
 
+import jsIcon from "../../imgs/languages_icons/js_icon.jpeg";
+import cssIcon from "../../imgs/languages_icons/css_icon.png";
+import htmlIcon from "../../imgs/languages_icons/html_icon.png";
+import reactIcon from "../../imgs/languages_icons/react_icon.png";
+import pythonIcon from "../../imgs/languages_icons/python_icon.png";
+
 
 const Projects = () => {
 
@@ -93,19 +99,16 @@ const Projects = () => {
 
                 <div className="tecnologiesUsed">
                     <span>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
+                        <img src={jsIcon} alt="icon JavaScript"/>
                     </span>
                     <span>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
+                        <img src={reactIcon} alt="icon React"/>
                     </span>
                     <span>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
+                        <img src={htmlIcon} alt="icon HTML"/>
                     </span>
                     <span>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
-                    </span>
-                    <span>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="" />
+                        <img src={cssIcon} alt="icon CSS"/>
                     </span>
                 </div>
 
@@ -124,7 +127,13 @@ const Projects = () => {
 
                 <div className="tecnologiesUsed">
                     <span>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt=""/>
+                        <img src={jsIcon} alt="icon JavaScript"/>
+                    </span>
+                    <span>
+                        <img src={htmlIcon} alt="icon HTML"/>
+                    </span>
+                    <span>
+                        <img src={cssIcon} alt="icon CSS"/>
                     </span>
                 </div>
 
@@ -143,7 +152,16 @@ const Projects = () => {
 
                 <div className="tecnologiesUsed">
                     <span>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt=""/>
+                        <img src={jsIcon} alt="icon JavaScript"/>
+                    </span>
+                    <span>
+                        <img src={reactIcon} alt="icon React"/>
+                    </span>
+                    <span>
+                        <img src={htmlIcon} alt="icon HTML"/>
+                    </span>
+                    <span>
+                        <img src={cssIcon} alt="icon CSS"/>
                     </span>
                 </div>
 
@@ -161,7 +179,13 @@ const Projects = () => {
 
                 <div className="tecnologiesUsed">
                     <span>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt=""/>
+                        <img src={pythonIcon} alt="icon Python"/>
+                    </span>
+                    <span>
+                        <img src={htmlIcon} alt="icon HTML"/>
+                    </span>
+                    <span>
+                        <img src={cssIcon} alt="icon CSS"/>
                     </span>
                 </div>
 
@@ -180,7 +204,13 @@ const Projects = () => {
 
                 <div className="tecnologiesUsed">
                     <span>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt=""/>
+                        <img src={jsIcon} alt="icon JavaScript"/>
+                    </span>
+                    <span>
+                        <img src={htmlIcon} alt="icon HTML"/>
+                    </span>
+                    <span>
+                        <img src={cssIcon} alt="icon CSS"/>
                     </span>
                 </div>
 
