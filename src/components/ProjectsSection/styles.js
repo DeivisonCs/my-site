@@ -74,6 +74,9 @@ export const ContentContainer = styled.div`
         text-align: justify;
         max-width: 500px;
         padding: 0px 20px;
+        font-size: 20px;
+        letter-spacing: 3px;
+        font-family: BebasNeue;
     }
 
 

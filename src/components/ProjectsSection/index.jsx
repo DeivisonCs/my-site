@@ -113,7 +113,7 @@ const Projects = () => {
                 </div>
 
 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error minus asperiores dolores tempore labore eius voluptatem exercitationem alias quam laborum. Dolorum est repudiandae itaque aut placeat fugiat vero quo velit?</p>
+                <p>A calculator built using JavaScript and React. I did it to learn more about how React works.</p>
 
             </ContentContainer>
 
@@ -138,7 +138,7 @@ const Projects = () => {
                 </div>
 
 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error minus asperiores dolores tempore labore eius voluptatem exercitationem alias quam laborum. Dolorum est repudiandae itaque aut placeat fugiat vero quo velit?</p>
+                <p>My first product page, using JavaScript.</p>
 
             </ContentContainer>
 
@@ -166,7 +166,7 @@ const Projects = () => {
                 </div>
 
 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error minus asperiores dolores tempore labore eius voluptatem exercitationem alias quam laborum. Dolorum est repudiandae itaque aut placeat fugiat vero quo velit?</p>
+                <p>An log in form with regex validation. I built it to exercise my React skills and learn how to use regex to validate input fields.</p>
 
             </ContentContainer>
 
@@ -190,7 +190,7 @@ const Projects = () => {
                 </div>
 
 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error minus asperiores dolores tempore labore eius voluptatem exercitationem alias quam laborum. Dolorum est repudiandae itaque aut placeat fugiat vero quo velit?</p>
+                <p>A gallery made using Python, SQLite and Django. Done as a training to a job.</p>
 
             </ContentContainer>
 
@@ -215,7 +215,7 @@ const Projects = () => {
                 </div>
 
 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error minus asperiores dolores tempore labore eius voluptatem exercitationem alias quam laborum. Dolorum est repudiandae itaque aut placeat fugiat vero quo velit?</p>
+                <p>The classic Pokedex project. I did it to learn how to use an API for the first time.</p>
             </ContentContainer>
             
         </OuterContainer>
