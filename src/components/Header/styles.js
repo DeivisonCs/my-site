@@ -124,11 +124,13 @@ export const NavHiddenMenu = styled.div`
 
         display: flex;
         flex-direction: column;
+        align-items: stretch;
         flex-wrap: nowrap;
         gap: 0;
         
         position: absolute;
         top: 100%;
+        right: 0%;
 
         overflow: hidden;
     }
@@ -146,7 +148,7 @@ export const NavHiddenMenu = styled.div`
         border-top: none;
 
         padding: 7px;
-        width: 100px;
+        width: 100%;
 
         text-align: center;
         cursor: pointer;
