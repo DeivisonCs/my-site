@@ -9,6 +9,7 @@ import cssIcon from "./../../imgs/languages_icons/css_icon.png";
 import htmlIcon from "./../../imgs/languages_icons/html_icon.png";
 import pythonIcon from "./../../imgs/languages_icons/python_icon.png";
 import cIcon from "./../../imgs/languages_icons/c_icon.png";
+import springIcon from "./../../imgs/languages_icons/icons8-logotipo-da-primavera-48.png";
 
 const DetailsSection = () => {
 
@@ -82,33 +83,38 @@ const DetailsSection = () => {
 
                 <ul className="skillContent" id="skill-list">
                     <li>
-                        <img className="languageIcon" src={jsIcon} alt="" />
+                        <img className="languageIcon" src={jsIcon} alt="JavaScript" />
                         <span>JavaScript</span>
                     </li>
 
                     <li>
-                        <img className="languageIcon" src={htmlIcon} alt="" />
+                        <img className="languageIcon" src={htmlIcon} alt="Html" />
                         <span>Html</span>
                     </li>
 
                     <li>
-                        <img className="languageIcon" src={cssIcon} alt="" />
+                        <img className="languageIcon" src={cssIcon} alt="Css" />
                         <span>Css</span>
                     </li>
 
                     <li>
-                        <img className="languageIcon" src={pythonIcon} alt="" />
+                        <img className="languageIcon" src={pythonIcon} alt="Python" />
                         <span>Python</span>
                     </li>
 
                     <li>
-                        <img className="languageIcon" src={reactIcon} alt="" />
+                        <img className="languageIcon" src={reactIcon} alt="React" />
                         <span>React</span>
                     </li>
 
                     <li>
-                        <img className="languageIcon" src={cIcon} alt="" />
+                        <img className="languageIcon" src={cIcon} alt="C" />
                         <span>C</span>
+                    </li>
+
+                    <li>
+                        <img className="languageIcon" src={springIcon} alt="SpringBoot" />
+                        <span>SpringBoot</span>
                     </li>
                 </ul>
             </SkillsContainer>
@@ -119,8 +125,8 @@ const DetailsSection = () => {
 
                 <ul className="education-content" id="education-list">
                     <li>
-                        <span>Análise e Desenvolvimento de Sistemas</span>
-                        <span>03/2022 - atual</span>
+                        <span>Systems Analysis and Development (3rd semester)</span>
+                        <span>2023/03 - On Going</span>
                     </li>
                 </ul>
             </EducationContainer>
