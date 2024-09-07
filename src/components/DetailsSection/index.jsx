@@ -125,7 +125,7 @@ const DetailsSection = () => {
 
                 <ul className="education-content" id="education-list">
                     <li>
-                        <span>Systems Analysis and Development (3rd semester)</span>
+                        <span>Systems Analysis and Development (4rd semester)</span>
                         <span>2023/03 - On Going</span>
                     </li>
                 </ul>
