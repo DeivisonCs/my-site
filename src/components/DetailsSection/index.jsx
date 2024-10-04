@@ -10,6 +10,7 @@ import htmlIcon from "./../../imgs/languages_icons/html_icon.png";
 import pythonIcon from "./../../imgs/languages_icons/python_icon.png";
 import cIcon from "./../../imgs/languages_icons/c_icon.png";
 import springIcon from "./../../imgs/languages_icons/icons8-logotipo-da-primavera-48.png";
+import postgresIcon from "./../../imgs/languages_icons/postgreSql_icon.png";
 
 const DetailsSection = () => {
 
@@ -115,6 +116,11 @@ const DetailsSection = () => {
                     <li>
                         <img className="languageIcon" src={springIcon} alt="SpringBoot" />
                         <span>SpringBoot</span>
+                    </li>
+                    
+                    <li>
+                        <img className="languageIcon" src={postgresIcon} alt="PostgreSql" />
+                        <span>PostgreSql</span>
                     </li>
                 </ul>
             </SkillsContainer>

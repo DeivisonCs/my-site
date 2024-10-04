@@ -8,12 +8,15 @@ import appleProject from "../../imgs/projects_imgs/landingPageProject.png";
 import inputValidation from "../../imgs/projects_imgs/inputValidationProject.png";
 import MyGallery from "../../imgs/projects_imgs/GalleryProject.png";
 import Pokedex from "../../imgs/projects_imgs/PokedexProject.png";
+import BetterBet from "../../imgs/projects_imgs/BetterBet.png";
 
 import jsIcon from "../../imgs/languages_icons/js_icon.jpeg";
 import cssIcon from "../../imgs/languages_icons/css_icon.png";
 import htmlIcon from "../../imgs/languages_icons/html_icon.png";
 import reactIcon from "../../imgs/languages_icons/react_icon.png";
 import pythonIcon from "../../imgs/languages_icons/python_icon.png";
+import javaIcon from "../../imgs/languages_icons/java_icon.png";
+import postgresIcon from "../../imgs/languages_icons/postgreSql_icon.png";
 
 
 const Projects = () => {
@@ -101,9 +104,9 @@ const Projects = () => {
                     <span>
                         <img src={jsIcon} alt="icon JavaScript"/>
                     </span>
-                    <span>
+                    {/* <span>
                         <img src={reactIcon} alt="icon React"/>
-                    </span>
+                    </span> */}
                     <span>
                         <img src={htmlIcon} alt="icon HTML"/>
                     </span>
@@ -113,7 +116,7 @@ const Projects = () => {
                 </div>
 
 
-                <p>A calculator built using JavaScript and React. I did it to learn more about how React works.</p>
+                <p>A calculator built using JavaScript and React.</p>
 
             </ContentContainer>
 
@@ -166,12 +169,12 @@ const Projects = () => {
                 </div>
 
 
-                <p>An log in form with regex validation. I built it to exercise my React skills and learn how to use regex to validate input fields.</p>
+                <p>An log in form with regex validation.</p>
 
             </ContentContainer>
 
             <ContentContainer className="projectContainer">
-                <a className="projectImage" href="https://deivisoncs.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">
+                <a className="projectImage" href="https://www.youtube.com/watch?v=r5_FawNnNdg" target="_blank" rel="noopener noreferrer">
                     <img src={MyGallery} alt="Project" />
                 </a>
 
@@ -190,7 +193,7 @@ const Projects = () => {
                 </div>
 
 
-                <p>A gallery made using Python, SQLite and Django. Done as a training to a job.</p>
+                <p>A web gallery made using Python, SQLite and Django.</p>
 
             </ContentContainer>
 
@@ -216,6 +219,27 @@ const Projects = () => {
 
 
                 <p>The classic Pokedex project. I did it to learn how to use an API for the first time.</p>
+            </ContentContainer>
+           
+            <ContentContainer className="projectContainer">
+
+                <a className="projectImage" href="https://www.youtube.com/watch?v=E5NQZg5SERs" target="_blank" rel="noopener noreferrer">
+                    <img src={BetterBet} alt="Project" />
+                </a>
+
+                <h2>BetterBet</h2>
+
+                <div className="tecnologiesUsed">
+                    <span>
+                        <img src={javaIcon} alt="icon Java"/>
+                    </span>
+                    <span>
+                        <img src={postgresIcon} alt="icon PosrgreSql"/>
+                    </span>
+                </div>
+
+
+                <p>A football betting application, the final project for a college course. It was developed using Java, Java Swing, and PostgreSQL.</p>
             </ContentContainer>
             
         </OuterContainer>
